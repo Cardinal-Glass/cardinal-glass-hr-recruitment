@@ -1,0 +1,151 @@
+#our-values {
+  position: relative;
+  background: $medium-gray;
+  //padding-bottom: rem-calc(60);
+  .section-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    transform: skewY(-3deg);
+    transform-origin: top left;
+  }
+  .grid-container {
+    position: relative;
+  }
+}
+.our-values-content {
+  padding-bottom: rem-calc(60);
+  @include breakpoint(large) {
+    max-width: 600px;
+  }
+}
+.our-values-intro {
+  margin-top: rem-calc(60);
+  p {
+    &:last-child {
+      margin-bottom: 3rem;
+    }
+  }
+}
+.value-title {
+  font-weight: 500;
+  font-size: rem-calc(18);
+}
+.values-slider-sticky-container {
+  display: block;
+  @include breakpoint(large) {
+    position: sticky;
+    top: 0;
+  }
+}
+.our-values-image-slider {
+  width: 100%;
+  height: 100vh;
+  @include breakpoint(large) {
+    margin-top: -100px;
+  }
+  > div {
+    width: 100%;
+    height: 100%;
+  }
+  .slick-track,
+  .slick-list,
+  .slick-slide {
+    height: 100%;
+  }
+  .slick-slide {
+    > div {
+      height: 100%;
+      > div {
+        height: 100%;
+      }
+    }
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+.values-slider-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  .values-slider-dots {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 0;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin: 0 6px;
+      padding: 0;
+      cursor: pointer;
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 16px;
+        height: 16px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+        &:before {
+          content: "";
+          width: 16px;
+          height: 16px;
+          border-radius: 99999px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          border: 2px solid $primary-color;
+          -webkit-transition: all 0.25s ease-out;
+          transition: all 0.25s ease-out;
+        }
+        &:hover {
+          &:before {
+            background-color: rgba(228, 38, 60, 0.5);
+          }
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+.single-value {
+  margin-bottom: 2.5rem;
+  .value-icon {
+    font-size: 2.5rem;
+    color: $primary-color;
+  }
+}
+.single-value-content {
+  padding-top: .5rem;
+  padding-right: 1.5rem;
+}

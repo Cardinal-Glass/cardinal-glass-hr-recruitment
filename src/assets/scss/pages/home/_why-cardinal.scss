@@ -1,0 +1,40 @@
+#why-cardinal {
+  position: relative;
+  background: $white;
+  padding: rem-calc(60) 0 rem-calc(160);
+  color: $white;
+  .section-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $maroon;
+    transform: skewY(-3deg);
+    transform-origin: top left;
+  }
+  .grid-container {
+    position: relative;
+  }
+  .why-cardinal-intro {
+    margin-bottom: rem-calc(80);
+    p {
+      font-size: rem-calc(18);
+    }
+  }
+  .why-cardinal-headline {
+    margin-bottom: rem-calc(40);
+  }
+  .benefit-grid {
+    .benefit-cell {
+      padding: 1rem;
+    }
+    .benefit-icon {
+      font-size: 2.5rem;
+      color: $primary-color;
+      margin-bottom: .5rem;
+    }
+  }
+}

@@ -2,6 +2,9 @@ h1 {
   font-weight:$global-weight-bold;
   line-height: 1.1;
 }
+h6 {
+  font-weight:$global-weight-medium;
+}
 .section-title {
   font-size: rem-calc(18);
   color: $primary-color;
@@ -9,4 +12,42 @@ h1 {
 }
 .section-heading {
   line-height: 1.2;
+}
+
+// Border left titles in various section
+.brdr-title {
+  position: relative;
+  font-weight: 500;
+  font-size: rem-calc(18);
+  margin-bottom: 1.5rem;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: calc((1.2*1.25rem - 1.25rem)/2);
+    width: 1px;
+    height: rem-calc(20);
+    background-color: $primary-color; 
+  }
+}
+
+// checkmark list
+.check-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.check-list-item {
+  display: flex;
+  position: relative;
+  padding-left: 24px;
+  margin: .25rem 0;
+}
+.list-item-icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  color: $primary-color;
 }

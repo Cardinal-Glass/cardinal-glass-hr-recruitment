@@ -70,7 +70,10 @@
 @import 'components/buttons';
 @import 'components/main-nav';
 
-@import 'pages/home';
+@import 'pages/home/hero';
+@import 'pages/home/why-cardinal';
+@import 'pages/home/our-values';
+@import 'pages/home/jobs';
 
 .weight-bold {
   font-weight: 700;
@@ -80,4 +83,31 @@
 }
 .mb-25 {
   margin-bottom: 2.5rem;
+}
+
+::selection {
+  background-color: $primary-color;
+  color: $white;
+  font-weight: 500;
+}
+
+//scrollbar
+html {
+  --scrollbarBG: #cacaca;
+  --thumbBG: #8a8a8a;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }

@@ -54,7 +54,7 @@
 @include foundation-top-bar;
 
 // Helpers
-@include foundation-float-classes;
+// @include foundation-float-classes;
 @include foundation-flex-classes;
 @include foundation-visibility-classes;
 // @include foundation-prototype-classes;
@@ -62,3 +62,20 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@import 'global/fonts';
+
+@import 'components/buttons';
+@import 'components/main-nav';
+
+@import 'pages/home';
+
+.weight-bold {
+  font-weight: 700;
+}
+.big-p {
+  font-size: rem-calc(18);
+}
+.mb-25 {
+  margin-bottom: 2.5rem;
+}

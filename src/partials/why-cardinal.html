@@ -1,0 +1,28 @@
+<section id="why-cardinal">
+  <div class="section-bg"></div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x why-cardinal-intro">
+      <div class="cell small-12 why-cardinal-headline">
+        <h2 class="section-title">Why Cardinal</h2>
+        <h3 class="weight-bold section-heading">Perks and benefits like you would not believe.</h3>
+      </div>
+      <div class="cell small-12 large-6">
+        <p>At Cardinal, our mission is to be the Insulating Glass supplier of choice in the residential window and door market by enhancing our culture of excellence, partnering with our customers, developing leaders, while creating life lasting opportunities for our employees. We go beyond a benefit package and competitive wages by offering opportunities for growth both horizontally and vertically. </p>
+      </div>
+      <div class="cell small-12 large-6">
+        <p>That means as your technical and soft skills increase so does your paycheck, whether you take on additional responsibilities or not. If you’re looking to step up the ranks, we offer leadership development programs and have a long history of internal promotions that have led to successful careers.</p>
+      </div>
+    </div>
+    {{#if benefits}}
+    <div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4 benefit-grid">
+      {{#each benefits.benefit}}
+      <div class="cell benefit-cell">
+        <i class="{{ icon }} benefit-icon"></i>
+        <h5 class="benefit-title">{{ title }}</h5>
+        <p class="benefit-description">{{ description }}</p>
+      </div>
+      {{/each}}
+    </div>
+    {{/if}}
+  </div>
+</section>

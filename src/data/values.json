@@ -1,0 +1,29 @@
+{
+  "value": [
+    {
+      "icon": "fad fa-users",
+      "title": "Family",
+      "content": "Your coworkers care for you here. Throughout the year we host multiple celebrations and get together including a summer picnic, plant wide BBQ’s, and our holiday party. Our family culture goes beyond work and is a support structure for your personal life as well."
+    },
+    {
+      "icon": "fad fa-medal",
+      "title": "Excellence",
+      "content": "We are the most admired glass company in the world and aim to be admired in all we do, whether it is producing our product with integrity or hosting a plant wide celebration."
+    },
+    {
+      "icon": "fad fa-thumbs-up",
+      "title": "Respect",
+      "content": "We are treat each other with dignity and are committed to cultivating and preserving a culture of diversity, inclusion and connectedness, and you can see it in our employee workforce and management team."
+    },
+    {
+      "icon": "fad fa-hard-hat",
+      "title": "Safety",
+      "content": "We take safety very seriously! We are voluntarily in pursuit of VPP star certification which is OSHA’s highest certification. Our commitment is that no one gets injured."
+    },
+    {
+      "icon": "fad fa-futbol",
+      "title": "Teamwork",
+      "content": "We are all members of highly performing teams and value the relationships and trust that is built between each other."
+    }
+  ]
+}

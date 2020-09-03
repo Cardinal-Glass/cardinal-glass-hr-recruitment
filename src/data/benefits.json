@@ -1,0 +1,44 @@
+{
+  "benefit": [
+    { 
+      "icon": "fad fa-hands-usd",
+      "title": "Competitive Wages",
+      "description": "$15.25/hr (1st Shift), $16.00/hr (2nd Shift), $16.25 (3rd Shift)"
+    },
+    { 
+      "icon": "fad fa-sack-dollar",
+      "title": "Monthly Bonuses",
+      "description": "Earn up to 52% extra each month in a bonus check."
+    },
+    { 
+      "icon": "fad fa-tree-palm",
+      "title": "9 Paid Holidays",
+      "description": "Paid Time off and (9) paid holidays"
+    },
+    { 
+      "icon": "fad fa-piggy-bank",
+      "title": "Retirement Savings",
+      "description": "401K and HSA programs"
+    },
+    { 
+      "icon": "fad fa-heart",
+      "title": "Health benefits",
+      "description": "Medical & dental coverage, Life and Disability Insurance"
+    },
+    { 
+      "icon": "fad fa-user-graduate",
+      "title": "Educational Assistance Program",
+      "description": "We can help you further your education."
+    },
+    { 
+      "icon": "fad fa-hand-sparkles",
+      "title": "Onsite IMT",
+      "description": "Industrial Massage Therapist for home and work related injuries"
+    },
+    { 
+      "icon": "fad fa-life-ring",
+      "title": "Employee Assistance Program",
+      "description": "Help you and your loved ones meet the challenges that life, work, and relationships can bring. 24/7 assistance at no charge."
+    }
+  ]
+}

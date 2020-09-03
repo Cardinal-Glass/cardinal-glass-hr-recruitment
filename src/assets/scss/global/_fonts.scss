@@ -1,0 +1,12 @@
+h1 {
+  font-weight:$global-weight-bold;
+  line-height: 1.1;
+}
+.section-title {
+  font-size: rem-calc(18);
+  color: $primary-color;
+  font-weight: 700;
+}
+.section-heading {
+  line-height: 1.2;
+}

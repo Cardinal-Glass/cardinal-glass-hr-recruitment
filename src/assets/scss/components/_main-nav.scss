@@ -1,0 +1,21 @@
+.site-header {
+  position: sticky;
+  display: block;
+  top: 0;
+  z-index: 9;
+}
+#mainNav {
+  .title-bar {
+    button {
+      margin-left: auto;
+    }
+  }
+  .top-bar-right {
+    margin-left: 0;
+    margin-right: auto;
+    @include breakpoint(large) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}

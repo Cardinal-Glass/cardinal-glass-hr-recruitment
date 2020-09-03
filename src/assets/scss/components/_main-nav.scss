@@ -3,6 +3,7 @@
   display: block;
   top: 0;
   z-index: 9;
+  margin-top: 1rem;
 }
 #mainNav {
   .title-bar {
@@ -19,3 +20,20 @@
     }
   }
 }
+  .main-menu-logo {
+    .logo-text {
+      position: absolute!important;
+      clip: rect(1px,1px,1px,1px);
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  }
+  .main-nav-link {
+    color: $black;
+    font-weight: 700;
+    transition: $button-transition;
+  }
+  .main-nav-button {
+    margin-left: 1rem;
+  }

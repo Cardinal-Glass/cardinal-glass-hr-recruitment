@@ -63,6 +63,8 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@import 'node_modules/slick-carousel/slick/slick.scss';
+
 @import 'global/fonts';
 
 @import 'components/buttons';

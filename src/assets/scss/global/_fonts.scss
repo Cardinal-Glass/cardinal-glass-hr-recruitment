@@ -13,6 +13,25 @@ h6 {
 .section-heading {
   line-height: 1.2;
 }
+.italic {
+  font-style: italic;
+}
+.weight-bold {
+  font-weight: 700;
+}
+.weight-medium {
+  font-weight: 500;
+}
+.big-p {
+  font-size: rem-calc(18);
+}
+.mb-25 {
+  margin-bottom: 2.5rem;
+}
+
+.color-maroon {
+  color: $maroon;
+}
 
 // Border left titles in various section
 .brdr-title {

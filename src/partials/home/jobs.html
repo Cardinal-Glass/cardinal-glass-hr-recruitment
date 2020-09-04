@@ -1,0 +1,46 @@
+<section id="jobs">
+  <div class="section-bg"></div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x align-justify">
+      <div class="cell small-12 large-6">
+        <div class="jobs-sticky-container">
+          <h2 class="section-title">Available Jobs</h2>
+          <h3 class="weight-bold mb-25 section-heading">We Are Hiring.</h3>
+          <p class="big-p">We enjoy what we do and value the people we work with. We believe that you can become the best version of yourself here.</p>
+          <h5 class="brdr-title">Qualifications/Physical Requirements for all Openings:</h5>
+          <ul class="check-list">
+            {{#each jobs.qualification}}
+            <li class="check-list-item"><i class="fad fa-check-circle list-item-icon"></i><span>{{ this }}</span></li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="cell small-12 large-5">
+        {{#if jobs.job-listing}}
+          {{#each jobs.job-listing}}
+          <div class="job-listing">
+            
+            <h6>{{ title }}</h6>
+
+            {{#each description}}
+            <p>{{ this }}</p>
+            {{/each}}
+
+            <p class="weight-medium color-maroon italic">
+              {{#each specs}}
+              {{ this }}<br/>
+              {{/each}}
+            </p>
+            <p>
+              {{#each shifts}}
+              {{ this }}<br/>
+              {{/each}}
+            </p>
+            <a href="{{ link }}" class="apply-link"><span>Apply Now</span><i class="fad fa-chevron-right" data-fa-transform="down-1"></i></a>
+          </div>
+          {{/each}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</section>

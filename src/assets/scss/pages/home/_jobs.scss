@@ -16,27 +16,27 @@
   .grid-container {
     position: relative;
   }
-  .job-qualifications-title {
-    position: relative;
-    font-weight: 500;
-    font-size: rem-calc(18);
-    margin-bottom: 1.5rem;
-    &:before {
-      content: "";
-      position: absolute;
-      left: -1rem;
-      top: calc((1.2*1.25rem - 1.25rem)/2);
-      width: 1px;
-      height: rem-calc(20);
-      background-color: $primary-color; 
-    }
-  }
 }
 .jobs-sticky-container {
   display: block;
   @include breakpoint(large) {
     position: sticky;
     top: 130px;
+  }
+}
+.job-qualifications-title {
+  position: relative;
+  font-weight: 500;
+  font-size: rem-calc(18);
+  margin-bottom: 1.5rem;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: calc((1.2*1.25rem - 1.25rem)/2);
+    width: 1px;
+    height: rem-calc(20);
+    background-color: $primary-color; 
   }
 }
 .job-listing {

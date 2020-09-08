@@ -1,0 +1,21 @@
+.main-footer {
+  background-color: $primary-color;
+  color: $white;
+  padding: 60px 0;
+  .main-footer-menu {
+    justify-content: flex-end;
+  }
+  .footer-menu-item {
+    color: $white;
+    display: flex;
+    align-items: flex-start;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  .icon-item {
+    .footer-icon {
+      margin-right: .5rem;
+    }
+  }
+}

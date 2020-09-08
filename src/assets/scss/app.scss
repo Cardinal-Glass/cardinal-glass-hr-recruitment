@@ -63,7 +63,12 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+// SLICK
 @import 'node_modules/slick-carousel/slick/slick.scss';
+
+// HAMBURGER
+@import 'global/hamburger-settings';
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 
 @import 'global/fonts';
 

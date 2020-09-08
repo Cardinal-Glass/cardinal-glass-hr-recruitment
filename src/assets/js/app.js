@@ -24,3 +24,7 @@ $('.our-values-image-slider').slick({
   "appendDots": ".values-slider-nav",
   "dotsClass": "values-slider-dots"
 });
+
+$('.mobile-nav').on('toggled.zf.responsiveToggle', function() {
+  $('.hamburger').toggleClass('is-active');
+});

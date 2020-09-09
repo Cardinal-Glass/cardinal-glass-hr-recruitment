@@ -25,6 +25,10 @@ $('.our-values-image-slider').slick({
   "dotsClass": "values-slider-dots"
 });
 
+
 $('.mobile-nav').on('toggled.zf.responsiveToggle', function() {
   $('.hamburger').toggleClass('is-active');
+});
+$(window).on('changed.zf.mediaquery', function() {
+  $('.hamburger').removeClass('is-active');
 });

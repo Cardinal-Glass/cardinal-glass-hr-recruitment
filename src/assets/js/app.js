@@ -32,3 +32,13 @@ $('.mobile-nav').on('toggled.zf.responsiveToggle', function() {
 $(window).on('changed.zf.mediaquery', function() {
   $('.hamburger').removeClass('is-active');
 });
+
+//form stuff
+$('.conditional-check').click(function() {
+  if($(this).is(":checked")) {
+    $(this).parent().children(".hidden-label").show();
+  }
+  else if($(this).is(":not(:checked)")) {
+    $(this).parent().children(".hidden-label").hide();
+  }
+});

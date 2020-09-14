@@ -27,14 +27,28 @@ $('.our-values-image-slider').slick({
 
 
 $('.mobile-nav').on('toggled.zf.responsiveToggle', function() {
-  $('.hamburger').toggleClass('is-active');
+  $('#main-menu').toggleClass('is-active');
+  if( $('.top-bar').is(':hidden') ) {
+    $('.main-menu-hamburger').removeClass('is-active');
+  }
 });
+
+$('.main-menu-hamburger').on('click', function() {
+  $(this).toggleClass('is-active');
+});
+
 $(window).on('changed.zf.mediaquery', function() {
-  $('.hamburger').removeClass('is-active');
+  $('.main-menu-hamburger').removeClass('is-active');
+});
+
+$('.top-bar-right .menu a').on('click', function(){
+  setTimeout(function() {
+		$('.main-menu-hamburger').trigger('click');
+	}, 100);
 });
 
 //form stuff
-$('.conditional-check').click(function() {
+$('.conditional-check').on('click', function(){
   if($(this).is(":checked")) {
     $(this).parent().children(".hidden-label").show();
   }

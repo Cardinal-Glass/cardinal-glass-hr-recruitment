@@ -1,0 +1,12 @@
+#hpContactForm {
+  margin-top: rem-cal(60);
+  input, textarea {
+    background: $light-gray;
+    border: none;
+    box-shadow: none;
+    &:focus {
+      background: $medium-gray;
+      border: none;
+    }
+  }
+}

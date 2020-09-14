@@ -67,6 +67,8 @@
 @import 'node_modules/slick-carousel/slick/slick.scss';
 
 // HAMBURGER
+$hamburger-layer-color: $black;
+$hamburger-active-layer-color: $white;
 @import 'global/hamburger-settings';
 @import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 
@@ -75,11 +77,20 @@
 @import 'components/buttons';
 @import 'components/main-nav';
 @import 'components/main-footer';
+@import 'components/forms';
 
 @import 'pages/home/hero';
 @import 'pages/home/why-cardinal';
 @import 'pages/home/our-values';
 @import 'pages/home/jobs';
+@import 'pages/home/contact';
+
+.mb-25 {
+  margin-bottom: 2.5rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
 
 ::selection {
   background-color: $primary-color;

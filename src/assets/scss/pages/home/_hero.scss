@@ -1,7 +1,12 @@
 .hero {
   position: relative;
-  padding: rem-calc(120) 0;
+  padding: rem-calc(60) 0;
   background: $maroon; // set this to blend into next section
+  text-align: center;
+  @include breakpoint(large) {
+    padding: rem-calc(120) 0;
+    text-align: left;
+  }
   .section-bg {
     position: absolute;
     top: 0;
@@ -24,12 +29,20 @@
     }
   }
   .home-intro {
-    margin-right: 60px;
+    @include breakpoint(large) {
+      margin-right: 60px;
+    }
   }
   .responsive-embed {
     margin-right: .9375rem;
   }
   .hero-menu {
+    margin-bottom: 4rem;
+    justify-content: center;
+    @include breakpoint(large) {
+      margin-bottom: 0;
+      justify-content: flex-start;
+    }
     a {
       font-weight: 500;
       margin-right: 1.5rem;

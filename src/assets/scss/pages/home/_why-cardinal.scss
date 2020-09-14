@@ -29,7 +29,11 @@
   }
   .benefit-grid {
     .benefit-cell {
-      padding: 1rem;
+      margin-bottom: 2rem;
+      @include breakpoint(large) {
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
     }
     .benefit-icon {
       font-size: 2.5rem;

@@ -4,11 +4,25 @@
   padding: 60px 0;
   .main-footer-menu {
     justify-content: flex-end;
+    flex-direction: column;
+    @include breakpoint(large) {
+      flex-direction: row;
+    }
+  }
+  .footer-logo-img {
+    margin-bottom: 2rem;
+    @include breakpoint(large) {
+      margin-bottom: 0;
+    }
   }
   .footer-menu-item {
     color: $white;
     display: flex;
     align-items: flex-start;
+    padding-left: 0;
+    @include breakpoint(large) {
+      padding-left: 1rem;
+    }
     &:last-child {
       padding-right: 0;
     }

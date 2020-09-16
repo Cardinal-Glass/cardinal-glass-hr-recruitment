@@ -8,12 +8,12 @@ import slick from 'slick-carousel';
 // it would execute earlier than we have assigned the global variable.
 // This is why we have to use CommonJS require() here since it doesn't
 // have the hoisting behavior.
-window.jQuery = $;
-require('foundation-sites');
+// window.jQuery = $;
+// require('foundation-sites');
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
-//import './lib/foundation-explicit-pieces';
+import './lib/foundation-explicit-pieces';
 
 
 $(document).foundation();
@@ -56,3 +56,13 @@ $('.conditional-check').on('click', function(){
     $(this).parent().children(".hidden-label").hide();
   }
 });
+
+$(window).on('load resize', function() {
+  //Reflow Magellan
+  function magcalc() {
+    $('#mainNavMenu').foundation('reflow');
+  }
+  setTimeout(magcalc, 300);
+});
+
+

@@ -17,6 +17,12 @@
     position: relative;
   }
 }
+.jobs-grid-x {
+  justify-content: center;
+  @include breakpoint(large) {
+    justify-content: space-between;
+  }
+}
 .jobs-sticky-container {
   display: block;
   @include breakpoint(large) {

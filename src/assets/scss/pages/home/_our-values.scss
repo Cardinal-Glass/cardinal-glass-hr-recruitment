@@ -18,10 +18,20 @@
     position: relative;
   }
 }
-.our-values-content {
-  padding-bottom: rem-calc(60);
+.our-values-grid-x {
+  justify-content: center;
   @include breakpoint(large) {
-    max-width: 600px;
+    justify-content: space-between;
+  }
+}
+.our-values-content {
+  padding-bottom: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  @include breakpoint(large) {
+    padding-bottom: 11rem;
+    max-width: 430px;
+    margin-left: 0;
   }
 }
 .our-values-intro {
@@ -38,6 +48,7 @@
 }
 .values-slider-sticky-container {
   display: block;
+  position: relative;
   @include breakpoint(large) {
     position: sticky;
     top: 0;
@@ -45,8 +56,10 @@
 }
 .our-values-image-slider {
   width: 100%;
-  height: 100vh;
+  //height: 100vh;
+  margin-top: -30px;
   @include breakpoint(large) {
+    height: 100vh;
     margin-top: -100px;
   }
   > div {
@@ -140,6 +153,9 @@
 }
 .single-value {
   margin-bottom: 2.5rem;
+  @include breakpoint(large) {
+    margin-bottom: 4rem;
+  }
   .value-icon {
     font-size: 2.5rem;
     color: $primary-color;

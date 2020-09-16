@@ -35,6 +35,7 @@
   .top-bar-right {
     margin-left: auto;
     margin-right: auto;
+    flex: 0 1 auto;
     @include breakpoint(large) {
       margin-left: auto;
       margin-right: 0;
@@ -43,6 +44,7 @@
   .main-menu-hamburger {
     display: flex;
     align-items: center;
+    padding-right: 0;
     &.is-active {
       color: $white;
     }
@@ -50,7 +52,7 @@
   .menu-btn-text {
     font-size: rem-calc(12);
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: $global-weight-bold;
     margin-right: .5rem;
   }
 }
@@ -64,17 +66,27 @@
     }
   }
   .main-nav-link {
-    font-weight: 700;
+    font-weight: $global-weight-bold;
     transition: $button-transition;
     color: $white;
     text-align: center;
+    &:focus {
+      color: $white;
+    }
     @include breakpoint(large) {
       color: $black;
       text-align: left;
+      &:focus {
+        color: $black;
+      }
+    }
+    &.is-active {
+      color: $primary-color;
     }
   }
   .main-nav-button {
     margin-top: .5rem;
+    font-weight: $global-weight-medium;
     @include breakpoint(large) {
       margin-top: 0;
       margin-left: 1rem;

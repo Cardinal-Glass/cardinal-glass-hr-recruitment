@@ -1,8 +1,12 @@
 #why-cardinal {
   position: relative;
   background: $white;
-  padding: rem-calc(60) 0 rem-calc(160);
+  padding: rem-calc(60) 0 rem-calc(80);
   color: $white;
+  overflow: hidden;
+  @include breakpoint(large) {
+    padding-bottom: rem-calc(160);
+  }
   .section-bg {
     position: absolute;
     top: 0;
@@ -14,6 +18,12 @@
     background-color: $maroon;
     transform: skewY(-3deg);
     transform-origin: top left;
+  }
+  .why-cardinal-bg-img {
+    position: absolute;
+    right: -450px;
+    top: 0;
+    opacity: 0.025;
   }
   .grid-container {
     position: relative;

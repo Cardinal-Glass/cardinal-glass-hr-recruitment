@@ -8,118 +8,122 @@
     </div>
     <div class="cell small-6">
       Position Applying For:
-      <select name="" id="">
+      <select name="position" id="apply-position">   
         <option value="0">Select Position:</option>
-        <option value="">Position 1</option>
-        <option value="">Position 2</option>
-        <option value="">Position 3</option>
-        <option value="">Position 4</option>
+        {{#if jobs.job-listing}}
+          {{#each jobs.job-listing}}
+            <option value="{{title}}">{{ title }}</option>
+          {{/each}}
+        {{/if}}
       </select>
     </div>
     <div class="cell small-6">
-      <label for="">How did you hear about us?
-      <input type="text"></label>
+      <label for="how-did-you-hear">How did you hear about us?
+      <input type="text" id="how-did-you-hear"></label>
     </div>
     <div class="cell small-4">
-      <label for="">First Name
-        <input type="text">
+      <label for="first-name">First Name
+        <input type="text" id="first-name">
       </label>
     </div>
     <div class="cell small-4">
-      <label for="">Last Name
-        <input type="text">
+      <label for="last-name">Last Name
+        <input type="text" id="last-name">
       </label>
     </div>
     <div class="cell small-4">
-      <label for="">Middle Name
-        <input type="text">
+      <label for="middle-name">Middle Name
+        <input type="text" id="middle-name">
       </label>
     </div>
     <div class="cell small-12 large-6">
-      <label for="">
+      <label for="address-1">
         Address Line 1
-        <input type="text">
+        <input type="text" id="address-1">
       </label>
-      <label for="">
+      <label for="address-2">
         Address Line 2
-        <input type="text">
+        <input type="text" id="address-2">
       </label>
       <div class="grid-x grid-margin-x">
         <div class="cell small-12 large-6">
-          <label for="">
+          <label for="city">
             City
-            <input type="text">
+            <input type="text" id="city">
           </label>
         </div>
         <div class="cell small-6 large-3">
-          <label for="">
+          <label for="state">
             State
-            <select name="" id="">
+            <select name="" id="state">
               <option value="0">Select State</option>
+              {{#each states}}
+              <option value="{{ name }}">{{ name }}</option>
+              {{/each}}
             </select>
           </label>
         </div>
         <div class="cell small-6 large-3">
-          <label for="">
+          <label for="zip">
             Zip
-            <input type="text">
+            <input type="text" id="zip">
           </label>
         </div>
       </div>
     </div>
     <div class="cell small-12 large-6">
-      <label for="">
+      <label for="home-phone">
         Home Phone Number
-        <input type="text">
+        <input type="text" id="home-phone">
       </label>
-      <label for="">
+      <label for="message-phone">
         Message Phone Number
-        <input type="text">
+        <input type="text" id="message-phone">
       </label>
-      <label for="">
+      <label for="email-address">
         Email Address
-        <input type="text">
+        <input type="text" id="email-address">
       </label>
     </div>
     <div class="cell small-12 large-4">
-      <input class="conditional-check" type="checkbox"><label for="">I have filed an application with Cardinal before.</label>
-      <label class="hidden-label" for="" style="display: none;">Date Applied?
-        <input type="text">
+      <input class="conditional-check" id="filed-before" type="checkbox"><label for="filed-before">I have filed an application with Cardinal before.</label>
+      <label class="hidden-label" for="prev-date-applied" style="display: none;">Date Applied?
+        <input type="text" id="prev-date-applied">
       </label>
     </div>
     <div class="cell small-12 large-4">
-      <input class="conditional-check" type="checkbox"><label for="">I have been employed by Cardinal before.</label>
-      <label class="hidden-label" for="" style="display: none;">Date(s) Job Held?
-        <input type="text">
+      <input class="conditional-check" id="employed-before" type="checkbox"><label for="employed-before">I have been employed by Cardinal before.</label>
+      <label class="hidden-label" for="prev-job-dates" style="display: none;">Date(s) Job Held?
+        <input type="text" id="prev-job-dates">
       </label>
     </div>
     <div class="cell small-12 large-4">
-      <input class="conditional-check" type="checkbox"><label for="">I am currently employed.</label>
-      <label class="hidden-label" for="" style="display: none;">Current Employer
-        <input type="text">
+      <input class="conditional-check" id="currently-employed" type="checkbox"><label for="currently-employed">I am currently employed.</label>
+      <label class="hidden-label" for="current-employer" style="display: none;">Current Employer
+        <input type="text" id="current-employer">
       </label>
     </div>
     <div class="cell small-12">
       <fieldset class="fieldset">
         <legend>Availability to Work (Select all that apply)</legend>
-        <input type="checkbox"><label for="">Full Time</label>
-        <input type="checkbox"><label for="">Part Time</label>
-        <input type="checkbox"><label for="">Temporary</label>
-        <input type="checkbox"><label for="">Days</label>
-        <input type="checkbox"><label for="">Nights</label>
-        <input type="checkbox"><label for="">Weekends</label>
+        <input type="checkbox" id="full-time-work"><label for="full-time-work">Full Time</label>
+        <input type="checkbox" id="part-time-work"><label for="part-time-work">Part Time</label>
+        <input type="checkbox" id="temporary-work"><label for="temporary-work">Temporary</label>
+        <input type="checkbox" id="day-shift-work"><label for="day-shift-work">Days</label>
+        <input type="checkbox" id="night-shift-work"><label for="night-shift-work">Nights</label>
+        <input type="checkbox" id="weekend-shift-work"><label for="weekend-shift-work">Weekends</label>
       </fieldset>
     </div>
     <div class="cell small-12 large-6">
-      <label for="">
+      <label for="start-date">
         Start Date:
-        <input type="date">
+        <input type="date" id="start-date">
       </label>
     </div>
     <div class="cell small-12 large-6">
-      <label for="">
+      <label for="salary-desired">
         Salary Desired
-        <input type="text">
+        <input type="text" id="salary-desired">
       </label>
     </div>
     <div class="cell small-12" style="padding: 60px 0 0;">
@@ -132,52 +136,55 @@
         <legend>Employer 1</legend>
         <div class="grid-x grid-margin-x">
           <div class="cell small-6 large-4">
-            <label for="">Company Name
-              <input type="text">
+            <label for="employer-1-company-name">Company Name
+              <input type="text" id="employer-1-company-name">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">City
-              <input type="text">
+            <label for="employer-1-city">City
+              <input type="text" id="employer-1-city">
             </label>
           </div>
           <div class="cell small-6 large-2">
-            <label for="">State
-              <select>
+            <label for="employer-1-state">State
+              <select id="employer-1-state">
                 <option value="0">Select a state</option>
+                {{#each states}}
+                <option value="{{ name }}">{{ name }}</option>
+                {{/each}}
               </select>
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">Telephone
-              <input type="text">
+            <label for="employer-1-phone">Telephone
+              <input type="text" id="employer-1-phone">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">
+            <label for="employer-1-date-from">
               From
-              <input type="date">
+              <input type="date" id="employer-1-date-from">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">
+            <label for="employer-1-date-to">
               To
-              <input type="date">
+              <input type="date" id="employer-1-date-to">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="">Supervisor Name
-              <input type="text">
+            <label for="employer-1-supervisor">Supervisor Name
+              <input type="text" id="employer-1-supervisor">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="">Duties / Work Performed
-              <textarea name="" id="" rows="5"></textarea>
+            <label for="employer-1-duties">Duties / Work Performed
+              <textarea name="" id="employer-1-duties" rows="5"></textarea>
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="">Reason for leaving
-              <input type="text">
+            <label for="employer-1-leaving-reason">Reason for leaving
+              <input type="text" id="employer-1-leaving-reason">
             </label>
           </div>
         </div>
@@ -189,52 +196,55 @@
         <legend>Employer 2</legend>
         <div class="grid-x grid-margin-x">
           <div class="cell small-6 large-4">
-            <label for="">Company Name
-              <input type="text">
+            <label for="employer-2-company-name">Company Name
+              <input type="text" id="employer-2-company-name">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">City
-              <input type="text">
+            <label for="employer-2-city">City
+              <input type="text" id="employer-2-city">
             </label>
           </div>
           <div class="cell small-6 large-2">
-            <label for="">State
-              <select>
+            <label for="employer-2-state">State
+              <select id="employer-2-state">
                 <option value="0">Select a state</option>
+                {{#each states}}
+                <option value="{{ name }}">{{ name }}</option>
+                {{/each}}
               </select>
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">Telephone
-              <input type="text">
+            <label for="employer-2-phone">Telephone
+              <input type="text" id="employer-2-phone">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">
+            <label for="employer-2-date-from">
               From
-              <input type="date">
+              <input type="date" id="employer-2-date-from">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">
+            <label for="employer-2-date-to">
               To
-              <input type="date">
+              <input type="date" id="employer-2-date-to">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="">Supervisor Name
-              <input type="text">
+            <label for="employer-2-supervisor">Supervisor Name
+              <input type="text" id="employer-2-supervisor">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="">Duties / Work Performed
-              <textarea name="" id="" rows="5"></textarea>
+            <label for="employer-2-duties">Duties / Work Performed
+              <textarea name="" id="employer-2-duties" rows="5"></textarea>
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="">Reason for leaving
-              <input type="text">
+            <label for="employer-2-leaving-reason">Reason for leaving
+              <input type="text" id="employer-2-leaving-reason">
             </label>
           </div>
         </div>
@@ -246,52 +256,55 @@
         <legend>Employer 3</legend>
         <div class="grid-x grid-margin-x">
           <div class="cell small-6 large-4">
-            <label for="">Company Name
-              <input type="text">
+            <label for="employer-3-company-name">Company Name
+              <input type="text" id="employer-3-company-name">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">City
-              <input type="text">
+            <label for="employer-3-city">City
+              <input type="text" id="employer-3-city">
             </label>
           </div>
           <div class="cell small-6 large-2">
-            <label for="">State
-              <select>
+            <label for="employer-3-state">State
+              <select id="employer-3-state">
                 <option value="0">Select a state</option>
+                {{#each states}}
+                <option value="{{ name }}">{{ name }}</option>
+                {{/each}}
               </select>
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">Telephone
-              <input type="text">
+            <label for="employer-3-phone">Telephone
+              <input type="text" id="employer-3-phone">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">
+            <label for="employer-3-date-from">
               From
-              <input type="date">
+              <input type="date" id="employer-3-date-from">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">
+            <label for="employer-3-date-to">
               To
-              <input type="date">
+              <input type="date" id="employer-3-date-to">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="">Supervisor Name
-              <input type="text">
+            <label for="employer-3-supervisor">Supervisor Name
+              <input type="text" id="employer-3-supervisor">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="">Duties / Work Performed
-              <textarea name="" id="" rows="5"></textarea>
+            <label for="employer-3-duties">Duties / Work Performed
+              <textarea name="" id="employer-3-duties" rows="5"></textarea>
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="">Reason for leaving
-              <input type="text">
+            <label for="employer-3-leaving-reason">Reason for leaving
+              <input type="text" id="employer-3-leaving-reason">
             </label>
           </div>
         </div>
@@ -299,27 +312,27 @@
     </div>
 
     <div class="cell small-12">
-      <label for="">
+      <label for="offices-held">
         List professional, trade, business, or civic activities and offices held.<br/>
         <span class="small">(You may exclude membership that would reveal gender, race, religion, national origin, age, ancestry, disability, or other protected status)</span>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="offices-held" cols="30" rows="10"></textarea>
       </label>
     </div>
-    <div class="cell small-12">
+    <div class="cell small-12" style="padding: 60px 0 0;">
       <h3 class="text-center">Education</h3>
       <fieldset class="fieldset">
         <legend>Highest Grade Completed</legend>
-        <input type="radio" name="education"><label for="">7</label>
-        <input type="radio" name="education"><label for="">8</label>
-        <input type="radio" name="education"><label for="">9</label>
-        <input type="radio" name="education"><label for="">10</label>
-        <input type="radio" name="education"><label for="">11</label>
-        <input type="radio" name="education"><label for="">12</label>
-        <input type="radio" name="education"><label for="">13</label>
-        <input type="radio" name="education"><label for="">14</label>
-        <input type="radio" name="education"><label for="">15</label>
-        <input type="radio" name="education"><label for="">16</label>
-        <input type="radio" name="education"><label for="">16+</label>
+        <input type="radio" name="education" id="7"><label for="7">7</label>
+        <input type="radio" name="education" id="8"><label for="8">8</label>
+        <input type="radio" name="education" id="9"><label for="9">9</label>
+        <input type="radio" name="education" id="10"><label for="10">10</label>
+        <input type="radio" name="education" id="11"><label for="11">11</label>
+        <input type="radio" name="education" id="12"><label for="12">12</label>
+        <input type="radio" name="education" id="13"><label for="13">13</label>
+        <input type="radio" name="education" id="14"><label for="14">14</label>
+        <input type="radio" name="education" id="15"><label for="15">15</label>
+        <input type="radio" name="education" id="16"><label for="16">16</label>
+        <input type="radio" name="education" id="16+"><label for="16+">16+</label>
       </fieldset>
     </div>
 
@@ -331,72 +344,72 @@
             <h5>High School</h5>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">Name
-              <input type="text">
+            <label for="high-school-name">Name
+              <input type="text" id="high-school-name">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">City/State
-              <input type="text">
+            <label for="high-school-location">City/State
+              <input type="text" id="high-school-location">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">Course of Study
-              <input type="text">
+            <label for="high-school-study">Course of Study
+              <input type="text" id="high-school-study">
             </label>
           </div>
           <div class="cell small-6 large-3">
             <h6>Graduate?</h6>
-            <input type="radio" name="graduate1"><label for="">Yes</label>
-            <input type="radio" name="graduate1"><label for="">No</label>
+            <input type="radio" name="graduate1" id="hs-graduate-yes"><label for="hs-graduate-yes">Yes</label>
+            <input type="radio" name="graduate1" id="hs-graduate-no"><label for="hs-graduate-no">No</label>
           </div>
       
           <div class="cell small-12">
             <h5>College</h5>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">Name
-              <input type="text">
+            <label for="college-school-name">Name
+              <input type="text" id="college-school-name">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">City/State
-              <input type="text">
+            <label for="college-school-location">City/State
+              <input type="text" id="college-school-location">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">Course of Study
-              <input type="text">
+            <label for="college-school-study">Course of Study
+              <input type="text" id="college-school-study">
             </label>
           </div>
           <div class="cell small-6 large-3">
             <h6>Graduate?</h6>
-            <input type="radio" name="graduate2"><label for="">Yes</label>
-            <input type="radio" name="graduate2"><label for="">No</label>
+            <input type="radio" name="graduate1" id="college-graduate-yes"><label for="college-graduate-yes">Yes</label>
+            <input type="radio" name="graduate1" id="college-graduate-no"><label for="college-graduate-no">No</label>
           </div>
       
           <div class="cell small-12">
             <h5>Other</h5>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">Name
-              <input type="text">
+            <label for="other-school-name">Name
+              <input type="text" id="other-school-name">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">City/State
-              <input type="text">
+            <label for="other-school-location">City/State
+              <input type="text" id="other-school-location">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="">Course of Study
-              <input type="text">
+            <label for="other-school-study">Course of Study
+              <input type="text" id="other-school-study">
             </label>
           </div>
           <div class="cell small-6 large-3">
             <h6>Graduate?</h6>
-            <input type="radio" name="graduate3"><label for="">Yes</label>
-            <input type="radio" name="graduate3"><label for="">No</label>
+            <input type="radio" name="graduate1" id="other-graduate-yes"><label for="other-graduate-yes">Yes</label>
+            <input type="radio" name="graduate1" id="other-graduate-no"><label for="other-graduate-no">No</label>
           </div>
         </div>
       </fieldset>
@@ -407,18 +420,18 @@
         <legend>Special Skills</legend>
         <div class="grid-x grid-margin-x">
           <div class="cell small-12 large-4">
-            <label for="">List any foreign languages you can speak, read and/or write and indicate level of proficiency.
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="foreign-languages">List any foreign languages you can speak, read and/or write and indicate level of proficiency.
+              <textarea name="" id="foreign-languages" cols="30" rows="10"></textarea>
             </label>
           </div>
           <div class="cell small-12 large-4">
-            <label for="">Describe any job-related specialized training, apprenticeship, skills and extra-curricular activities.
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="special-training">Describe any job-related specialized training, apprenticeship, skills and extra-curricular activities.
+              <textarea name="" id="special-training" cols="30" rows="10"></textarea>
             </label>
           </div>
           <div class="cell small-12 large-4">
-            <label for="">Summarize special job-related skill and qualifications acquired from employment or other experiences.
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="job-skills">Summarize special job-related skill and qualifications acquired from employment or other experiences.
+              <textarea name="" id="job-skills" cols="30" rows="10"></textarea>
             </label>
           </div>
         </div>
@@ -433,19 +446,19 @@
         <legend>Reference 1</legend>
           <div class="grid-x grid-margin-x">
             <div class="cell small-6">
-              <label for="">Name
-                <input type="text">
+              <label for="reference-1-name">Name
+                <input type="text" id="reference-1-name">
               </label>
-              <label for="">Telephone Number
-                <input type="text">
+              <label for="reference-1-phone">Telephone Number
+                <input type="text" id="reference-1-phone">
               </label>
             </div>
             <div class="cell small-6">
-              <label for="">Address
-                <input type="text">
+              <label for="reference-1-address">Address
+                <input type="text" id="reference-1-address">
               </label>
-              <label for="">Email Address
-                <input type="text">
+              <label for="reference-1-email">Email Address
+                <input type="text" id="reference-1-email">
               </label>
           </div>
         </div>
@@ -457,19 +470,19 @@
         <legend>Reference 2</legend>
           <div class="grid-x grid-margin-x">
             <div class="cell small-6">
-              <label for="">Name
-                <input type="text">
+              <label for="reference-2-name">Name
+                <input type="text" id="reference-2-name">
               </label>
-              <label for="">Telephone Number
-                <input type="text">
+              <label for="reference-2-phone">Telephone Number
+                <input type="text" id="reference-2-phone">
               </label>
             </div>
             <div class="cell small-6">
-              <label for="">Address
-                <input type="text">
+              <label for="reference-2-address">Address
+                <input type="text" id="reference-2-address">
               </label>
-              <label for="">Email Address
-                <input type="text">
+              <label for="reference-2-email">Email Address
+                <input type="text" id="reference-2-email">
               </label>
           </div>
         </div>
@@ -481,19 +494,19 @@
         <legend>Reference 3</legend>
           <div class="grid-x grid-margin-x">
             <div class="cell small-6">
-              <label for="">Name
-                <input type="text">
+              <label for="reference-3-name">Name
+                <input type="text" id="reference-3-name">
               </label>
-              <label for="">Telephone Number
-                <input type="text">
+              <label for="reference-3-phone">Telephone Number
+                <input type="text" id="reference-3-phone">
               </label>
             </div>
             <div class="cell small-6">
-              <label for="">Address
-                <input type="text">
+              <label for="reference-3-address">Address
+                <input type="text" id="reference-3-address">
               </label>
-              <label for="">Email Address
-                <input type="text">
+              <label for="reference-3-email">Email Address
+                <input type="text" id="reference-3-email">
               </label>
           </div>
         </div>
@@ -507,15 +520,15 @@
       </div>
     </div>
     <div class="cell small-12">
-      <div>
-        <input id="verification-checkbox" type="checkbox" required><label for="verification-checkbox">I verify that I have read and agree to the above information.</label>
+      <div style="display: flex;">
+        <input style="margin-top: 5px;" id="verification-checkbox" type="checkbox" required><label for="verification-checkbox">I verify that I have read and agree to the above information.</label>
       </div>
-      <div>
-        <input type="checkbox" required><label for="">I am at least 18 years of age.</label>
+      <div style="display: flex;">
+        <input style="margin-top: 5px;" type="checkbox" id="age-requirement" required><label for="age-requirement">I am at least 18 years of age.</label>
       </div>
       
       <div style="display: flex;">
-        <input id="legal-eligibility" type="checkbox" required><label for="legal-eligibility">I am legally eligible for employment in the United States. (If offered employment you will be required to provide original documents establishing your identity and authorization to work.)</label>
+        <input style="margin-top: 5px;" id="legal-eligibility" type="checkbox" required><label for="legal-eligibility">I am legally eligible for employment in the United States. (If offered employment you will be required to provide original documents establishing your identity and authorization to work.)</label>
       </div>
     </div>
     <div class="cell small-12">

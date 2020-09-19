@@ -97,7 +97,7 @@ const hpContactForm = form => {
   contactdata.append('form-name', 'cardinal-hr-contact');
   fetch('/', {
     method: 'POST',
-    body: data,
+    body: contactdata,
   }).then(() => {
     getElementsByClassName('hp-thankyou').style.display='block';
   }).catch(error => {

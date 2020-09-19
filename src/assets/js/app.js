@@ -108,7 +108,7 @@ const contactForm = document.querySelector('#hpContactForm')
 if (contactForm) {
   contactForm.addEventListener('submit', e => {
     e.preventDefault();
-    processForm(contactForm);
+    hpContactForm(contactForm);
   })
 }
 

@@ -77,40 +77,40 @@ $(window).on('load resize', function() {
   setTimeout(magcalc, 300);
 });
 
-// $('#hpContactForm').submit(function( e ) {
-//   e.preventDefault();
+$('#hpContactForm').submit(function( e ) {
+  e.preventDefault();
 
-//   var $hpForm = $(this),
-//       $hpFormButton = $('.hp-contact-form-submit'),
-//       $hpFormSuccess = $('.hp-thankyou');
+  var $hpForm = $(this),
+      $hpFormButton = $('.hp-contact-form-submit'),
+      $hpFormSuccess = $('.hp-thankyou');
 
-//   $.post($hpForm.attr('action'), $hpForm.serialize()).then(function() {
+  $.post($hpForm.attr('action'), $hpForm.serialize()).then(function() {
 
-//     $hpForm.trigger('reset');
-//     $hpFormSuccess.fadeIn(250);
-//     $hpFormButton.attr('disabled', true);
+    $hpForm.trigger('reset');
+    $hpFormSuccess.fadeIn(250);
+    $hpFormButton.attr('disabled', true);
 
-//   });
-// });
-const hpContactForm = form => {
-  const contactdata = new FormData(form)
-  contactdata.append('form-name', 'cardinal-hr-contact');
-  fetch('/', {
-    method: 'POST',
-    body: contactdata,
-  }).then(() => {
-    getElementsByClassName('hp-thankyou').style.display='block';
-  }).catch(error => {
-    form.innerHTML = '<div class="form--error">Error: ${error}</div>';
-  })
-}
-const contactForm = document.querySelector('#hpContactForm')
-if (contactForm) {
-  contactForm.addEventListener('submit', e => {
-    e.preventDefault();
-    hpContactForm(contactForm);
-  })
-}
+  });
+});
+// const hpContactForm = form => {
+//   const contactdata = new FormData(form)
+//   contactdata.append('form-name', 'cardinal-hr-contact');
+//   fetch('/', {
+//     method: 'POST',
+//     body: contactdata,
+//   }).then(() => {
+//     getElementsByClassName('hp-thankyou').style.display='block';
+//   }).catch(error => {
+//     form.innerHTML = '<div class="form--error">Error: ${error}</div>';
+//   })
+// }
+// const contactForm = document.querySelector('#hpContactForm')
+// if (contactForm) {
+//   contactForm.addEventListener('submit', e => {
+//     e.preventDefault();
+//     hpContactForm(contactForm);
+//   })
+// }
 
 $('#applicationForm').submit(function( e ) {
   e.preventDefault();

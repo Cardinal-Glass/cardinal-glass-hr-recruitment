@@ -72,7 +72,7 @@ $('#hpContactForm').submit(function( e ) {
       $hpFormButton = $('.hp-contact-form-submit'),
       $hpFormSuccess = $('.hp-thankyou');
 
-  $.post($hpForm.attr('action'), $form.serialize()).then(function() {
+  $.post($hpForm.attr('action'), $hpForm.serialize()).then(function() {
 
     $hpForm.trigger('reset');
     $hpFormSuccess.fadeIn(250);

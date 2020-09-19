@@ -65,4 +65,20 @@ $(window).on('load resize', function() {
   setTimeout(magcalc, 300);
 });
 
+$('#hpContactForm').submit(function( e ) {
+  e.preventDefault();
+
+  var $hpForm = $(this),
+      $hpFormButton = $('.hp-contact-form-submit'),
+      $hpFormSuccess = $('.hp-thankyou');
+
+  $.post($hpForm.attr('action'), $form.serialize()).then(function() {
+
+    $hpForm.trigger('reset');
+    $hpFormSuccess.fadeIn(250);
+    $hpFormButton.attr('disabled', true);
+
+  });
+});
+
 

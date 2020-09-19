@@ -1,4 +1,26 @@
 {
+  "value_image": [
+    {
+      "name": "cardinal-img.jpg",
+      "alt": ""
+    },
+    {
+      "name": "cardinal-img2.jpg",
+      "alt": ""
+    },
+    {
+      "name": "cardinal-img3.jpg",
+      "alt": ""
+    },
+    {
+      "name": "cardinal-img4.jpg",
+      "alt": ""
+    },
+    {
+      "name": "cardinal-img5.jpg",
+      "alt": ""
+    }
+  ],
   "value": [
     {
       "icon": "fad fa-users",

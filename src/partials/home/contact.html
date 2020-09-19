@@ -14,8 +14,13 @@
         <p class="">For general inquries and questions please use this form. If you wish to apply <a data-open="application-form" class="weight-bold">please click here.</a></p>
       </div>
       <div class="cell small-12 large-9">
-        <form id="hpContactForm" name="Cardinal IG Contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-          <label style="display:none!important;">Don’t fill this out if you're human: <input name="bot-field" /></label>
+        <form id="hpContactForm" name="cardinal-hr-contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human: 
+              <input name="bot-field" />
+            </label>
+          </div>
           <div class="grid-x grid-margin-x">
             <div class="cell medium-6">
               <label for="contact-first-name">First Name 

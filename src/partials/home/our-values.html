@@ -3,12 +3,12 @@
   <div class="grid-container full">
     <div class="grid-x our-values-grid-x align-center large-align-justify">
       <div class="cell small-11 medium-10 large-6">
-        <div class="values-slider-sticky-container">
+        <div class="values-slider-sticky-container sticky-element">
           {{#if values.value_image}}
             <div class="our-values-image-slider">
               {{# each values.value_image}}
               <div>
-                <img src="{{root}}assets/img/{{ name }}" alt="{{ alt }}">
+                <img class="our-value-img object-fit-cover" src="{{root}}assets/img/{{ name }}" alt="{{ alt }}">
               </div>
               {{/each}}            
             </div>

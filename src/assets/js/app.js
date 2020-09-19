@@ -2,6 +2,8 @@ import $ from 'jquery';
 import 'what-input';
 
 import slick from 'slick-carousel';
+import objectFitImages from 'object-fit-images';
+import Stickyfill from 'stickyfilljs';
 
 // Foundation JS relies on a global variable. In ES6, all imports are hoisted
 // to the top of the file so if we used `import` to import Foundation,
@@ -18,11 +20,21 @@ import './lib/foundation-explicit-pieces';
 
 $(document).foundation();
 
+//object fit polyfill for our cover images
+var $objectFitImages = $('.object-fit-cover');
+objectFitImages($objectFitImages);
+
+//sticky polyfill
+var $soSticky = $('.sticky-element');
+Stickyfill.add($soSticky);
+
+// Slick slider
 $('.our-values-image-slider').slick({
   "dots": true,
   "arrows": false,
   "appendDots": ".values-slider-nav",
-  "dotsClass": "values-slider-dots"
+  "dotsClass": "values-slider-dots",
+  "autoplay": true
 });
 
 
@@ -77,6 +89,22 @@ $('#hpContactForm').submit(function( e ) {
     $hpForm.trigger('reset');
     $hpFormSuccess.fadeIn(250);
     $hpFormButton.attr('disabled', true);
+
+  });
+});
+
+$('#applicationForm').submit(function( e ) {
+  e.preventDefault();
+
+  var $appForm = $(this),
+      $appFormButton = $('.app-submit-button'),
+      $appFormSuccess = $('.app-thankyou');
+
+  $.post($appForm.attr('action'), $appForm.serialize()).then(function() {
+
+    $appForm.trigger('reset');
+    $appFormSuccess.fadeIn(250);
+    $appFormButton.attr('disabled', true);
 
   });
 });

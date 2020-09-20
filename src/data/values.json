@@ -1,11 +1,7 @@
 {
   "value_image": [
     {
-      "name": "cardinal-img.jpg",
-      "alt": ""
-    },
-    {
-      "name": "cardinal-img2.jpg",
+      "name": "cardinal-img5.jpg",
       "alt": ""
     },
     {
@@ -17,7 +13,11 @@
       "alt": ""
     },
     {
-      "name": "cardinal-img5.jpg",
+      "name": "cardinal-img.jpg",
+      "alt": ""
+    },
+    {
+      "name": "cardinal-img2.jpg",
       "alt": ""
     }
   ],

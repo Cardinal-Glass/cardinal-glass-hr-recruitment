@@ -79,25 +79,40 @@
       width: 100px;
       height: auto;
       margin-bottom: 1rem;
+      
       @include breakpoint(large) {
         width: 150px;
       }
     }
     h1 {
+      text-shadow: -2px 2px 2px rgba(0, 0, 0, .2);
       @include breakpoint(large) {
         font-size: 3.5rem;
       }
     }
     .big-p {
+      text-shadow: -1px 1px 2px rgba(0, 0, 0, .2);
       @include breakpoint(large) {
         font-size: rem-calc(22);
       }
     }
     .hero-menu-item {
       color: $white;
-      margin: 1rem 1rem 0;
+      text-shadow: -2px 2px 2px rgba(0, 0, 0, .2);
+      transition: $button-transition;
+      &:hover {
+        color: darken($white, 10%);
+      }
       @include breakpoint(large) {
         font-size: rem-calc(20);
+        margin: 1rem 1rem 0;
+      }
+      &.button {
+        text-shadow: none;
+        box-shadow: -2px 2px 2px rgba(0, 0, 0, .2);
+        &:hover {
+          color: $white;
+        }
       }
     }
   }

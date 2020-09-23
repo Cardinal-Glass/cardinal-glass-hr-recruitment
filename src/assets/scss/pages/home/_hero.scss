@@ -55,7 +55,7 @@
 .video-hero {
   position: relative;
   height: 50vh;
-  min-height: 490px;
+  min-height: 570px;
   color: $white;
   overflow: hidden;
   @include breakpoint(medium) {
@@ -67,13 +67,14 @@
   .home-intro {
     margin-top: calc(100vw / -18.5);
   }
-  .big-p {
-    font-size: rem-calc(22);
-  }
+  
   .video-content {
     position: relative;
     z-index: 2;
     height: 100%;
+    .grid-x {
+      height: 100%;
+    }
     img {
       width: 100px;
       height: auto;
@@ -87,13 +88,17 @@
         font-size: 3.5rem;
       }
     }
-    .grid-x {
-      height: 100%;
+    .big-p {
+      @include breakpoint(large) {
+        font-size: rem-calc(22);
+      }
     }
     .hero-menu-item {
       color: $white;
-      font-size: rem-calc(20);
       margin: 1rem 1rem 0;
+      @include breakpoint(large) {
+        font-size: rem-calc(20);
+      }
     }
   }
   &:before {

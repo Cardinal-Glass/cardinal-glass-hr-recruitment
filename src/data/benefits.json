@@ -3,12 +3,12 @@
     { 
       "icon": "fad fa-hands-usd",
       "title": "Competitive Wages",
-      "description": "$15.25/hr (1st Shift), $16.00/hr (2nd Shift), $16.25 (3rd Shift)."
+      "description": "$16.25/hr (1st Shift), $17.00/hr (2nd Shift), $17.25 (3rd Shift)."
     },
     { 
       "icon": "fad fa-sack-dollar",
-      "title": "Monthly Bonuses",
-      "description": "Earn up to 52% extra each month in a bonus check."
+      "title": "Opportunity for Monthly Bonuses",
+      "description": "When Cardinal makes money, you make money."
     },
     { 
       "icon": "fad fa-tree-palm",
@@ -23,7 +23,7 @@
     { 
       "icon": "fad fa-heart",
       "title": "Health benefits",
-      "description": "Medical & dental coverage, Life and Disability Insurance."
+      "description": "Medical & Dental coverage, Life and Disability Insurance."
     },
     { 
       "icon": "fad fa-user-graduate",

@@ -34,7 +34,8 @@ $('.our-values-image-slider').slick({
   "arrows": false,
   "appendDots": ".values-slider-nav",
   "dotsClass": "values-slider-dots",
-  "autoplay": true
+  "autoplay": true,
+  "lazyLoad": 'progressive'
 });
 
 

@@ -26,11 +26,13 @@
             <p>{{ this }}</p>
             {{/each}}
 
-            <p class="weight-medium color-maroon italic">
+            {{#if specs}}
+            <ul class="weight-medium check-list job-specs">
               {{#each specs}}
-              {{ this }}<br/>
+              <li class="check-list-item"><i class="fad fa-circle list-item-icon"></i><span>{{ this }}</span></li>
               {{/each}}
-            </p>
+            </ul>
+            {{/if}}
             <p>
               {{#each shifts}}
               {{ this }}<br/>

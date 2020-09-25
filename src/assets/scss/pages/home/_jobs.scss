@@ -58,6 +58,21 @@
     background: linear-gradient(90deg, $primary-color,$primary-color 50%,transparent 0,transparent);
     background-size: 4px 1px;
   }
+  .job-specs {
+    font-size: rem-calc(14);
+    color: $dark-gray;
+    margin-bottom: 1rem;
+    .list-item-icon {
+      font-size: rem-calc(10);
+      margin-right: 0;
+      margin-top: 1px;
+      color: $dark-gray;
+    }
+  }
+  .check-list-item {
+    padding-left: rem-calc(16);
+    margin-bottom: .5rem;
+  }
 }
 .apply-link {
   span {

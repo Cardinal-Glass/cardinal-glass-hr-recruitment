@@ -9,69 +9,146 @@
   ],
   "job-listing": [
     {
-    "title": "Production Technician - IG Lines",
-    "description": [
-      "This position includes handling and loading of glass on an assembly line, inspection of glass/ units for defects and loading finished units onto racks, perform assignments in a safe and efficient manner, and always be an effective member of our team by living by our values and committing to our mission."
-    ],
-    "specs": [
-      "Must be able to lift 50 lbs. on a regular basis."
-    ],
-    "shifts": [
-      "3rd Shift: 10:00pm to 6:20am"
-    ],
-    "link": "#"
-    },
-    {
-      "title": "Production Technician - IG Lines",
+      "title": "Production Technician - 2nd Shift",
       "description": [
-        "This position includes handling and loading of glass on an assembly line, inspection of glass/ units for defects and loading finished units onto racks, perform assignments in a safe and efficient manner, and always be an effective member of our team by living by our values and committing to our mission."
+        "Full time position for entry level production workers. The primary duties include handling glass, lifting glass, inspecting glass for defects, slotting and packing glass in racks. Employees must work well in a team and be flexible and willing to perform a variety of jobs."
       ],
-      "specs": [
-        "Must be able to lift 50 lbs. on a regular basis."
-      ],
+      "specs": [],
       "shifts": [
-        "3rd Shift: 10:00pm to 6:20am"
+        "2nd Shift: 2:00pm – 10:00pm"
       ],
       "link": "#"
-      },
-      {
-        "title": "Production Technician - IG Lines",
-        "description": [
-          "This position includes handling and loading of glass on an assembly line, inspection of glass/ units for defects and loading finished units onto racks, perform assignments in a safe and efficient manner, and always be an effective member of our team by living by our values and committing to our mission."
-        ],
-        "specs": [
-          "Must be able to lift 50 lbs. on a regular basis."
-        ],
-        "shifts": [
-          "3rd Shift: 10:00pm to 6:20am"
-        ],
-        "link": "#"
-        },
-        {
-          "title": "Production Technician - IG Lines",
-          "description": [
-            "This position includes handling and loading of glass on an assembly line, inspection of glass/ units for defects and loading finished units onto racks, perform assignments in a safe and efficient manner, and always be an effective member of our team by living by our values and committing to our mission."
-          ],
-          "specs": [
-            "Must be able to lift 50 lbs. on a regular basis."
-          ],
-          "shifts": [
-            "3rd Shift: 10:00pm to 6:20am"
-          ],
-          "link": "#"
-          },
-          {
-            "title": "Production Technician - IG Lines",
-            "description": [
-              "This position includes handling and loading of glass on an assembly line, inspection of glass/ units for defects and loading finished units onto racks, perform assignments in a safe and efficient manner, and always be an effective member of our team by living by our values and committing to our mission."
-            ],
-            "specs": [
-              "Must be able to lift 50 lbs. on a regular basis."
-            ],
-            "shifts": [
-              "3rd Shift: 10:00pm to 6:20am"
-            ],
-            "link": "#"
-            }
+    },
+    {
+      "title": "Production Technician - 3rd Shift",
+      "description": [
+        "Full time position for entry level production workers. The primary duties include handling glass, lifting glass, inspecting glass for defects, slotting and packing glass in racks. Employees must work well in a team and be flexible and willing to perform a variety of jobs."
+      ],
+      "specs": [],
+      "shifts": [
+        "3rd Shift: 10pm – 6:00am"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Fork Lift Operator - 2nd Shift",
+      "description": [
+        "Full time position for experienced fork lift driver. This position requires a safety conscious team player. Will spend majority of shift on forklift retrieving and delivering product in a timely manner."
+      ],
+      "specs": [],
+      "shifts": [
+        "2nd Shift: 2:00pm – 10:00pm"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Fork Lift Operator - 3rd Shift",
+      "description": [
+        "Full time position for experienced fork lift driver. This position requires a safety conscious team player. Will spend majority of shift on forklift retrieving and delivering product in a timely manner."
+      ],
+      "specs": [],
+      "shifts": [
+        "3rd Shift: 10:00pm – 6:00am"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Maintenance Technician - 1st Shift",
+      "description": [
+        "Full time position involving maintaining, trouble shooting, and performing maintenance on all plant equipment in a highly automated manufacturing facility. Must be responsive, a team player, self-motivated and detail focused."
+      ],
+      "specs": [
+        "2 year Associate Degree preferred or 2-5 years’ experience with similar job requirements.",
+        "Starting pay varies off education and experience"
+      ],
+      "shifts": [
+        "1st Shift: 6:00am – 2:00pm"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Maintenance Technician - 2nd Shift",
+      "description": [
+        "Full time position involving maintaining, trouble shooting, and performing maintenance on all plant equipment in a highly automated manufacturing facility. Must be responsive, a team player, self-motivated and detail focused."
+      ],
+      "specs": [
+        "2 year Associate Degree preferred or 2-5 years’ experience with similar job requirements.",
+        "Starting pay varies off education and experience"
+      ],
+      "shifts": [
+        "2nd Shift: 2:00pm – 10:00pm"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Maintenance Technician - 3rd Shift",
+      "description": [
+        "Full time position involving maintaining, trouble shooting, and performing maintenance on all plant equipment in a highly automated manufacturing facility. Must be responsive, a team player, self-motivated and detail focused."
+      ],
+      "specs": [
+        "2 year Associate Degree preferred or 2-5 years’ experience with similar job requirements.",
+        "Starting pay varies off education and experience"
+      ],
+      "shifts": [
+        "3rd Shift: 10:00pm – 6:00am"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Information Technology Technician",
+      "description": [
+        "Full time position involving maintenance and development of plant communication, data, hardware, and software. Must work well with teams, be flexible with hours as projects develop, and be reliable self driven person."
+      ],
+      "specs": [
+        "2 year Associate Degree preferred or 2-5 years’ experience with similar job requirements.",
+        "Starting pay varies off education and experience"
+      ],
+      "shifts": [
+        "1st Shift: 7:00am – 3:00pm"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Electrical Engineer",
+      "description": [
+        "Full time position involving machinery and facilities systems design and repair. Must work well with teams, be flexible with hours as projects develop, and be reliable self driven person."
+      ],
+      "specs": [
+        "4 year Bachelor Degree preferred or 2-5 years’ experience with similar job requirements.",
+        "Starting pay varies off education and experience"
+      ],
+      "shifts": [
+        "1st Shift: 7:00am – 3:00pm"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Manufacturing Engineer",
+      "description": [
+        "Full time positon involving design of processes, tools and machinery. Work with internal and external suppliers for equipment install. Must work well with teams, be flexible with hours as projects develop, and be reliable self driven person."
+      ],
+      "specs": [
+        "4 year Bachelor Degree preferred or 2-5 years’ experience with similar job requirements.",
+        "Starting pay varies off education and experience"
+      ],
+      "shifts": [
+        "1st Shift: 7:00am – 3:00pm"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Mechanical Engineer",
+      "description": [
+        "Full time position involving new machinery, and tool design and upkeep. Work heavily with teams and external suppliers for install and trouble shooting. Must work well with teams, be flexible with hours as projects develop, and be reliable self driven person."
+      ],
+      "specs": [
+        "4 year Bachelor Degree preferred or 2-5 years’ experience with similar job requirements.",
+        "Starting pay varies off education and experience"
+      ],
+      "shifts": [
+        "1st Shift: 7:00am – 3:00pm"
+      ],
+      "link": "#"
+    }
   ]
 }

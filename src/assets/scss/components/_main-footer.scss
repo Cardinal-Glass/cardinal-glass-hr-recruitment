@@ -1,8 +1,11 @@
 .main-footer {
   background-color: $primary-color;
   color: $white;
-  padding: 30px 0;
-  box-shadow: 0 -5px 0 darken($primary-color, 10%);
+  padding: 30px 0 22px;
+  box-shadow: 0 -1px 0 darken($primary-color, 10%);
+  @include breakpoint(large) {
+    padding: 18px 0;
+  }
   .main-footer-menu {
     justify-content: flex-end;
     flex-direction: column;
@@ -11,7 +14,7 @@
     }
   }
   .footer-logo-img {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     @include breakpoint(large) {
       margin-bottom: 0;
     }

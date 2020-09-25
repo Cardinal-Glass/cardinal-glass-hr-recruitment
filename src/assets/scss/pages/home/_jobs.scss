@@ -61,7 +61,7 @@
   .job-specs {
     font-size: rem-calc(14);
     color: $dark-gray;
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
     .list-item-icon {
       font-size: rem-calc(10);
       margin-right: 0;
@@ -72,6 +72,10 @@
   .check-list-item {
     padding-left: rem-calc(16);
     margin-bottom: .5rem;
+  }
+  .job-shift {
+    font-size: rem-calc(14);
+    margin-bottom: 1.5rem;
   }
 }
 .apply-link {

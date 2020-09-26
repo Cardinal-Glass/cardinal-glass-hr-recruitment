@@ -1,6 +1,6 @@
 # Cardinal Glass Hood River
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7a2f25f0-750c-49cd-a742-2bb536b93fe9/deploy-status)](https://app.netlify.com/sites/cardinalhr/deploys)[![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a2f25f0-750c-49cd-a742-2bb536b93fe9/deploy-status)](https://app.netlify.com/sites/cardinalhr/deploys) [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
 
 **Please [email me directly](mailto:ian@iandaly.com) with any issues.**

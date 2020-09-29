@@ -9,16 +9,10 @@
   </div>
 </div>
 <form id="applicationForm" name="application-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-  <div hidden aria-hidden="true">
-    <label>
-      Don’t fill this out if you're human: 
-      <input name="bot-field" />
-    </label>
-  </div>
 <div class="grid-container">
   <div class="grid-x grid-margin-x">
     <div class="cell small-6">
-      <label for="position-applying-for">Position Applying For</label>
+      <label for="position-applying-for">Position Applying For:</label>
       <select name="position-applying-for" id="position-applying-for" required>   
         <option value="0">Select Position</option>
         {{#if jobs.job-listing}}
@@ -147,17 +141,17 @@
         <legend>Employer 1</legend>
         <div class="grid-x grid-margin-x">
           <div class="cell small-6 large-4">
-            <label for="employer-1-company-name"><span class="d-none">Employer 1</span> Company Name
+            <label for="employer-1-company-name"><span class="d-none">Employer 1 </span>Company Name
               <input type="text" id="employer-1-company-name" name="employer-1-company-name">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="employer-1-city">City
+            <label for="employer-1-city"><span class="d-none">Employer 1 </span>City
               <input type="text" id="employer-1-city" name="employer-1-city">
             </label>
           </div>
           <div class="cell small-6 large-2">
-            <label for="employer-1-state">State</label>
+            <label for="employer-1-state"><span class="d-none">Employer 1 </span>State</label>
             <select name="employer-1-state" id="employer-1-state">
               <option value="0">Select a state</option>
               {{#each states}}
@@ -166,34 +160,34 @@
             </select>
           </div>
           <div class="cell small-6 large-3">
-            <label for="employer-1-phone">Telephone
+            <label for="employer-1-phone"><span class="d-none">Employer 1 </span>Telephone
               <input type="text" id="employer-1-phone" name="employer-1-phone">
             </label>
           </div>
           <div class="cell small-6 large-3">
             <label for="employer-1-date-from">
-              From
+              <span class="d-none">Employer 1 </span>From
               <input type="date" id="employer-1-date-from" name="employer-1-date-from">
             </label>
           </div>
           <div class="cell small-6 large-3">
             <label for="employer-1-date-to">
-              To
+              <span class="d-none">Employer 1 </span>To
               <input type="date" id="employer-1-date-to" name="employer-1-date-to">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="employer-1-supervisor">Supervisor Name
+            <label for="employer-1-supervisor"><span class="d-none">Employer 1 </span>Supervisor Name
               <input type="text" id="employer-1-supervisor" name="employer-1-supervisor">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="employer-1-duties">Duties / Work Performed
+            <label for="employer-1-duties"><span class="d-none">Employer 1 </span>Duties / Work Performed
               <textarea name="employer-1-duties" id="employer-1-duties" rows="5"></textarea>
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="employer-1-leaving-reason">Reason for leaving
+            <label for="employer-1-leaving-reason"><span class="d-none">Employer 1 </span>Reason for leaving
               <input type="text" id="employer-1-leaving-reason" name="employer-1-leaving-reason">
             </label>
           </div>
@@ -206,17 +200,17 @@
         <legend>Employer 2</legend>
         <div class="grid-x grid-margin-x">
           <div class="cell small-6 large-4">
-            <label for="employer-2-company-name">Company Name
+            <label for="employer-2-company-name"><span class="d-none">Employer 2 </span>Company Name
               <input type="text" id="employer-2-company-name" name="employer-2-company-name">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="employer-2-city">City
+            <label for="employer-2-city"><span class="d-none">Employer 2 </span>City
               <input type="text" id="employer-2-city" name="employer-2-city">
             </label>
           </div>
           <div class="cell small-6 large-2">
-            <label for="employer-2-state">State</label>
+            <label for="employer-2-state"><span class="d-none">Employer 2 </span>State</label>
               <select name="employer-2-state" id="employer-2-state">
                 <option value="0">Select a state</option>
                 {{#each states}}
@@ -226,34 +220,34 @@
             
           </div>
           <div class="cell small-6 large-3">
-            <label for="employer-2-phone">Telephone
+            <label for="employer-2-phone"><span class="d-none">Employer 2 </span>Telephone
               <input type="text" id="employer-2-phone" name="employer-2-phone">
             </label>
           </div>
           <div class="cell small-6 large-3">
             <label for="employer-2-date-from">
-              From
+              <span class="d-none">Employer 2 </span>From
               <input type="date" id="employer-2-date-from" name="employer-2-date-from">
             </label>
           </div>
           <div class="cell small-6 large-3">
             <label for="employer-2-date-to">
-              To
+              <span class="d-none">Employer 2 </span>To
               <input type="date" id="employer-2-date-to" name="employer-2-date-to">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="employer-2-supervisor">Supervisor Name
+            <label for="employer-2-supervisor"><span class="d-none">Employer 2 </span>Supervisor Name
               <input type="text" id="employer-2-supervisor" name="employer-2-supervisor">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="employer-2-duties">Duties / Work Performed
+            <label for="employer-2-duties"><span class="d-none">Employer 2 </span>Duties / Work Performed
               <textarea name="employer-2-duties" id="employer-2-duties" rows="5"></textarea>
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="employer-2-leaving-reason">Reason for leaving
+            <label for="employer-2-leaving-reason"><span class="d-none">Employer 2 </span>Reason for leaving
               <input type="text" id="employer-2-leaving-reason" name="employer-2-leaving-reason">
             </label>
           </div>
@@ -266,17 +260,17 @@
         <legend>Employer 3</legend>
         <div class="grid-x grid-margin-x">
           <div class="cell small-6 large-4">
-            <label for="employer-3-company-name">Company Name
+            <label for="employer-3-company-name"><span class="d-none">Employer 3 </span>Company Name
               <input type="text" id="employer-3-company-name" name="employer-3-company-name">
             </label>
           </div>
           <div class="cell small-6 large-3">
-            <label for="employer-3-city">City
+            <label for="employer-3-city"><span class="d-none">Employer 3 </span>City
               <input type="text" id="employer-3-city" name="employer-3-city">
             </label>
           </div>
           <div class="cell small-6 large-2">
-            <label for="employer-3-state">State</label>
+            <label for="employer-3-state"><span class="d-none">Employer 3 </span>State</label>
               <select name="employer-3-state" id="employer-3-state">
                 <option value="0">Select a state</option>
                 {{#each states}}
@@ -286,34 +280,34 @@
             
           </div>
           <div class="cell small-6 large-3">
-            <label for="employer-3-phone">Telephone
+            <label for="employer-3-phone"><span class="d-none">Employer 3 </span>Telephone
               <input type="text" id="employer-3-phone" name="employer-3-phone">
             </label>
           </div>
           <div class="cell small-6 large-3">
             <label for="employer-3-date-from">
-              From
+              <span class="d-none">Employer 3 </span>From
               <input type="date" id="employer-3-date-from" name="employer-3-date-from">
             </label>
           </div>
           <div class="cell small-6 large-3">
             <label for="employer-3-date-to">
-              To
+              <span class="d-none">Employer 3 </span>To
               <input type="date" id="employer-3-date-to" name="employer-3-date-to">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="employer-3-supervisor">Supervisor Name
+            <label for="employer-3-supervisor"><span class="d-none">Employer 3 </span>Supervisor Name
               <input type="text" id="employer-3-supervisor" name="employer-3-supervisor">
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="employer-3-duties">Duties / Work Performed
+            <label for="employer-3-duties"><span class="d-none">Employer 3 </span>Duties / Work Performed
               <textarea name="employer-3-duties" id="employer-3-duties" rows="5"></textarea>
             </label>
           </div>
           <div class="cell small-6 large-6">
-            <label for="employer-3-leaving-reason">Reason for leaving
+            <label for="employer-3-leaving-reason"><span class="d-none">Employer 3 </span>Reason for leaving
               <input type="text" id="employer-3-leaving-reason" name="employer-3-leaving-reason">
             </label>
           </div>
@@ -557,6 +551,12 @@
       <button type="submit" class="button large round app-submit-button">Submit <i class="fas fa-paper-plane" style="margin-left:.25rem;"></i></button>
     </div>
     
+  </div>
+  <div hidden aria-hidden="true">
+    <label>
+      Don’t fill this out if you're human: 
+      <input name="bot-field" />
+    </label>
   </div>
 </div>
 </form>

@@ -18,8 +18,8 @@
 <div class="grid-container">
   <div class="grid-x grid-margin-x">
     <div class="cell small-6">
-      Position Applying For
-      <select name="position-applying-for" id="apply-position" required>   
+      <label for="position-applying-for">Position Applying For</label>
+      <select name="position-applying-for" id="position-applying-for" required>   
         <option value="0">Select Position</option>
         {{#if jobs.job-listing}}
           {{#each jobs.job-listing}}
@@ -147,7 +147,7 @@
         <legend>Employer 1</legend>
         <div class="grid-x grid-margin-x">
           <div class="cell small-6 large-4">
-            <label for="employer-1-company-name">Company Name
+            <label for="employer-1-company-name"><span class="d-none">Employer 1</span> Company Name
               <input type="text" id="employer-1-company-name" name="employer-1-company-name">
             </label>
           </div>
@@ -158,13 +158,12 @@
           </div>
           <div class="cell small-6 large-2">
             <label for="employer-1-state">State</label>
-              <select name="employer-1-state" id="employer-1-state">
-                <option value="0">Select a state</option>
-                {{#each states}}
-                <option value="{{ name }}">{{ name }}</option>
-                {{/each}}
-              </select>
-            
+            <select name="employer-1-state" id="employer-1-state">
+              <option value="0">Select a state</option>
+              {{#each states}}
+              <option value="{{ name }}">{{ name }}</option>
+              {{/each}}
+            </select>
           </div>
           <div class="cell small-6 large-3">
             <label for="employer-1-phone">Telephone

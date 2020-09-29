@@ -91,7 +91,9 @@ $hamburger-active-layer-color: $white;
 .mb-4 {
   margin-bottom: 4rem;
 }
-
+.d-none {
+  display: none;
+}
 ::selection {
   background-color: $primary-color;
   color: $white;

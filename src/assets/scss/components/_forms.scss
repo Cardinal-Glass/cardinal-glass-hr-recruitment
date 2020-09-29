@@ -10,3 +10,11 @@
     }
   }
 }
+.graduate-radio-inputs {
+  display: flex;
+  label {
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
+}

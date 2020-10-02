@@ -9,6 +9,12 @@
   </div>
 </div>
 <form id="applicationForm" name="application-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <div hidden aria-hidden="true">
+    <label>
+      Don’t fill this out if you're human: 
+      <input name="bot-field" />
+    </label>
+  </div>
 <div class="grid-container">
   <div class="grid-x grid-margin-x">
     <div class="cell small-6">
@@ -551,12 +557,6 @@
       <button type="submit" class="button large round app-submit-button">Submit <i class="fas fa-paper-plane" style="margin-left:.25rem;"></i></button>
     </div>
     
-  </div>
-  <div hidden aria-hidden="true">
-    <label>
-      Don’t fill this out if you're human: 
-      <input name="bot-field" />
-    </label>
   </div>
 </div>
 </form>

@@ -93,25 +93,6 @@ $('#hpContactForm').submit(function( e ) {
 
   });
 });
-// const hpContactForm = form => {
-//   const contactdata = new FormData(form)
-//   contactdata.append('form-name', 'cardinal-hr-contact');
-//   fetch('/', {
-//     method: 'POST',
-//     body: contactdata,
-//   }).then(() => {
-//     getElementsByClassName('hp-thankyou').style.display='block';
-//   }).catch(error => {
-//     form.innerHTML = '<div class="form--error">Error: ${error}</div>';
-//   })
-// }
-// const contactForm = document.querySelector('#hpContactForm')
-// if (contactForm) {
-//   contactForm.addEventListener('submit', e => {
-//     e.preventDefault();
-//     hpContactForm(contactForm);
-//   })
-// }
 
 $('#applicationForm').submit(function( e ) {
   e.preventDefault();
@@ -128,5 +109,4 @@ $('#applicationForm').submit(function( e ) {
 
   });
 });
-
 

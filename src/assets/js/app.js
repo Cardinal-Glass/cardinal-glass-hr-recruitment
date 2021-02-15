@@ -78,7 +78,7 @@ $(window).on('load resize', function() {
   setTimeout(magcalc, 300);
 });
 
-$('#hpContactForm').submit(function( e ) {
+$('#hpContactForm').submit(function(e) {
   e.preventDefault();
 
   var $hpForm = $(this),
@@ -94,7 +94,7 @@ $('#hpContactForm').submit(function( e ) {
   });
 });
 
-$('#applicationForm').submit(function( e ) {
+$('#applicationForm').submit(function(e) {
   e.preventDefault();
 
   var $appForm = $(this),

@@ -9,6 +9,20 @@
   ],
   "job-listing": [
     {
+      "title": "Quality Assurance Manager",
+      "description": [
+        "This position strategically leads team of 4 QA technicians providing quality support on 3 shifts in a 24 hour/day operation. Work with customers and external auditing groups to ensure compliance while providing technical advice and mentoring to employees and plant leadership."
+      ],
+      "specs": [
+        "4 year degree in a Mathematical, Engineering, or Scientific field",
+        "3-5 years of experience in general industry quality, or related field",
+        "Proven analytical and problem-solving skill",
+        "Strong Interpersonal skills",
+        "Starting pay depends on education and experience"
+      ],
+      "link": "#"
+    },
+    {
       "title": "Production Technician - 2nd Shift",
       "description": [
         "Full time position for entry level production workers. The primary duties include handling glass, lifting glass, inspecting glass for defects, slotting and packing glass in racks. Employees must work well in a team and be flexible and willing to perform a variety of jobs."
@@ -77,23 +91,6 @@
       ],
       "shifts": [
         "3rd Shift: 10:00pm – 6:00am"
-      ],
-      "link": "#"
-    },
-    {
-      "title": "Maintenance Supervisor – IT",
-      "description": [
-        "This position strategically leads their department in installing, maintaining, and improving their department, its equipment, and its processes.  They are responsible for the safety, team building, customer service, training, and coordination of everyone within the department."
-      ],
-      "specs": [
-        "Cisco Certified Technician (CCT)",
-        "Microsoft Technology Associate (MTA)",
-        "CompTIA A+",
-        "Associate degree in a related field is preferred",
-        "Starting Pay depends on education and experience"
-      ],
-      "shifts": [
-        "1st Shift: 7:00am – 4:00pm"
       ],
       "link": "#"
     },

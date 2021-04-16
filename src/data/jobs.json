@@ -4,24 +4,10 @@
     "Basic computer, math and tape measuring skills",
     "Daily overtime and weekend work as needed",
     "Must be able to stand and walk for long periods of time (8-10 hour shifts with appropriate breaks)",
-    "Ability to lift up to a range of 20 to 50 pounds on a regular basis (depending on position)",
+    "Ability to lift up to 50 pounds on a regular basis (depending on position)",
     "Pass a pre-employment drug screen and physical assessment. Adhere to random drug screening."
   ],
   "job-listing": [
-    {
-      "title": "Quality Assurance Manager",
-      "description": [
-        "This position strategically leads team of 4 QA technicians providing quality support on 3 shifts in a 24 hour/day operation. Work with customers and external auditing groups to ensure compliance while providing technical advice and mentoring to employees and plant leadership."
-      ],
-      "specs": [
-        "4 year degree in a Mathematical, Engineering, or Scientific field",
-        "3-5 years of experience in general industry quality, or related field",
-        "Proven analytical and problem-solving skill",
-        "Strong Interpersonal skills",
-        "Starting pay depends on education and experience"
-      ],
-      "link": "#"
-    },
     {
       "title": "Production Technician - 2nd Shift",
       "description": [
@@ -41,6 +27,30 @@
       "specs": [],
       "shifts": [
         "3rd Shift: 11:00pm – 7:00am"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Production Technician – Part Time",
+      "description": [
+        "Part time position for entry level production workers. The primary duties include handling glass, lifting glass, inspecting glass for defects, slotting and packing glass in racks. Employees must work well in a team and be flexible and willing to perform a variety of jobs."
+      ],
+      "specs": [],
+      "shifts": [
+        "1st Shift Options",
+        "Monday – Thursday",
+        "6am – 10am or  7am – 11am",
+        "10am – 2pm or  11am – 3pm",
+        "",
+        "2nd Shift Options",
+        "Monday – Thursday",
+        "2pm – 6pm or  3pm – 7pm",
+        "6pm – 10pm or  7pm – 11pm",
+        "",
+        "Weekend Options",
+        "Friday – Saturday",
+        "6am – 2pm or  7am – 3pm",
+        "2pm – 10pm or  3pm – 11pm"
       ],
       "link": "#"
     },

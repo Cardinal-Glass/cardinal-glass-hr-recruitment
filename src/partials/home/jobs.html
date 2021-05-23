@@ -23,13 +23,13 @@
             <h6>{{ title }}</h6>
 
             {{#each description}}
-            <p>{{ this }}</p>
+            <p>{{{ this }}}</p>
             {{/each}}
 
             {{#if specs}}
             <ul class="weight-medium check-list job-specs">
               {{#each specs}}
-              <li class="check-list-item"><i class="fad fa-circle list-item-icon"></i><span>{{ this }}</span></li>
+              <li class="check-list-item"><i class="fad fa-circle list-item-icon"></i><span>{{{ this }}}</span></li>
               {{/each}}
             </ul>
             {{/if}}

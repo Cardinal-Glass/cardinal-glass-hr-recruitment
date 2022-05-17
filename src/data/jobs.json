@@ -9,6 +9,18 @@
   ],
   "job-listing": [
     {
+      "title": "Production Technician - 12-Hour Shifts",
+      "description": [
+        "Work 3 days, 4 days Off. Full time 12 Hour shift position for entry level production workers. The primary duties include handling glass, lifting glass, inspecting glass for defects, slotting and packing glass in racks. Employees must work well in a team and be flexible and willing to perform a variety of jobs."
+      ],
+      "specs": [],
+      "shifts": [
+        "Sunday – Tuesday: 5:45pm – 6:15am",
+        "Wednesday – Friday: 5:45pm – 6:15am"
+      ],
+      "link": "#"
+    },
+    {
       "title": "Production Technician - 2nd Shift",
       "description": [
         "Full time position for entry level production workers. The primary duties include handling glass, lifting glass, inspecting glass for defects, slotting and packing glass in racks. Employees must work well in a team and be flexible and willing to perform a variety of jobs."
@@ -27,52 +39,6 @@
       "specs": [],
       "shifts": [
         "3rd Shift: 11:00pm – 7:00am"
-      ],
-      "link": "#"
-    },
-    {
-      "title": "Production Technician – Part Time",
-      "description": [
-        "Part time position for entry level production workers. The primary duties include handling glass, lifting glass, inspecting glass for defects, slotting and packing glass in racks. Employees must work well in a team and be flexible and willing to perform a variety of jobs."
-      ],
-      "specs": [],
-      "shifts": [
-        "1st Shift Options",
-        "Monday – Thursday",
-        "6am – 10am or  7am – 11am",
-        "10am – 2pm or  11am – 3pm",
-        "",
-        "2nd Shift Options",
-        "Monday – Thursday",
-        "2pm – 6pm or  3pm – 7pm",
-        "6pm – 10pm or  7pm – 11pm",
-        "",
-        "Weekend Options",
-        "Friday – Saturday",
-        "6am – 2pm or  7am – 3pm",
-        "2pm – 10pm or  3pm – 11pm"
-      ],
-      "link": "#"
-    },
-    {
-      "title": "Fork Lift Operator - 2nd Shift",
-      "description": [
-        "Full time position for experienced fork lift driver. This position requires a safety conscious team player. Will spend majority of shift on forklift retrieving and delivering product in a timely manner."
-      ],
-      "specs": [],
-      "shifts": [
-        "2nd Shift: 2:00pm – 10:00pm"
-      ],
-      "link": "#"
-    },
-    {
-      "title": "Fork Lift Operator - 3rd Shift",
-      "description": [
-        "Full time position for experienced fork lift driver. This position requires a safety conscious team player. Will spend majority of shift on forklift retrieving and delivering product in a timely manner."
-      ],
-      "specs": [],
-      "shifts": [
-        "3rd Shift: 10:00pm – 6:00am"
       ],
       "link": "#"
     },
@@ -101,34 +67,6 @@
       ],
       "shifts": [
         "3rd Shift: 10:00pm – 6:00am"
-      ],
-      "link": "#"
-    },
-    {
-      "title": "Electrical Engineer",
-      "description": [
-        "Full time position involving machinery and facilities systems design and repair. Must work well with teams, be flexible with hours as projects develop, and be reliable self driven person."
-      ],
-      "specs": [
-        "4 year Bachelor Degree preferred or 2-5 years’ experience with similar job requirements.",
-        "Starting pay depends on education and experience"
-      ],
-      "shifts": [
-        "1st Shift: 7:00am – 4:00pm"
-      ],
-      "link": "#"
-    },
-    {
-      "title": "Manufacturing Process Engineer",
-      "description": [
-        "This position is responsible for providing escalated technical support to maintenance personnel and is strategically involved in projects, training technicians, developing and documenting maintenance procedures, diagnosing equipment and systems, applying predictive analysis, identifying improvement opportunities and implementing solutions for them."
-      ],
-      "specs": [
-        "Bachelor’s Degree in Mechanical, Electrical, Industrial, or Manufacturing Engineering required. Alternatively an Engineering Technology degree and a strong electrical and mechanical aptitude.",
-        "Starting pay depends on education and experience"
-      ],
-      "shifts": [
-        "1st Shift: 7:00am – 4:00pm"
       ],
       "link": "#"
     }

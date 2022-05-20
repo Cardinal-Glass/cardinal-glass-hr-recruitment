@@ -91,6 +91,28 @@ $hamburger-active-layer-color: $white;
 .mb-4 {
   margin-bottom: 4rem;
 }
+.mt-25 {
+  margin-top: 2.5rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.white-link {
+  color: $white;
+  text-decoration: underline;
+}
+.img-headline {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  img {
+    margin-right: .5rem;
+    margin-bottom: 2px;
+    @include breakpoint(large) {
+      margin-bottom: 8px;
+    }
+  }
+}
 .d-none {
   display: none;
 }

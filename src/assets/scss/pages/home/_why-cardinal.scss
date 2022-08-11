@@ -54,3 +54,13 @@
     }
   }
 }
+.safety-slider-cell {
+  position: relative;
+}
+.safety-slider {
+  .safety-slider-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

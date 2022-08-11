@@ -30,6 +30,16 @@ $(document).foundation();
 $(function(){
 
   // Slick slider
+  $('.safety-slider').slick({
+    "dots": true,
+    "arrows": false,
+    "appendDots": ".safety-slider-nav",
+    "dotsClass": "safety-slider-dots",
+    "autoplay": true,
+    "lazyLoad": 'progressive'
+  });
+
+  // Slick slider
   $('.our-values-image-slider').slick({
     "dots": true,
     "arrows": false,

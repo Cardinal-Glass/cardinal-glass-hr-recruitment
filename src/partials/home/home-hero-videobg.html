@@ -9,11 +9,11 @@
       <div class="small-12 text-center" style="max-width: 690px;">
         <div class="home-intro">
           <img src="{{root}}assets/img/cardinal.svg" alt="">
-          <h1 class="mb-25">More than Just a Paycheck</h1>
-          <p class="big-p mb-25">We now offer a variety of schedule types to better fit your needs. Our new schedule allows you to work full time, 3 days per week, while enjoying 4 days off. That is an extra 104 days off per year!</p>
-          <div class="menu hero-menu align-center" data-magellan>
-            <a class="hero-menu-item" href="#why-cardinal">View Benefits <i class="fad fa-chevron-right" data-fa-transform="down-1"></i></a>
-            <a class="hero-menu-item button round" href="#our-values">Our Values <i class="fad fa-chevron-right" data-fa-transform="down-1"></i></a>
+          <h1 class="">{{ hero.headline }}</h1>
+          <p class="big-p mt-25">{{ hero.copy }}</p>
+          <div class="menu hero-menu align-center mt-25" data-magellan>
+            <a class="hero-menu-item" href="{{hero.link1}}">{{hero.cta1}} <i class="fad fa-chevron-right" data-fa-transform="down-1"></i></a>
+            <a class="hero-menu-item button round" href="{{hero.link2}}">{{hero.cta2}} <i class="fad fa-chevron-right" data-fa-transform="down-1"></i></a>
           </div>
         </div>
       </div>

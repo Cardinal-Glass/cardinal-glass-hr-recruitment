@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Content Manager</title>
+</head>
+<body>
+  <!-- Include the script that builds the page and powers Decap CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script>
+    CMS.registerPreviewStyle("example.css");
+  </script>
+
+  <script>
+    var HeroPreview = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        return h('div', {"className": "video-hero video-hero-preview"},
+          h('div', {"className": "video-content video-hero-preview-content"},
+          h('h1', {}, entry.getIn(['data', 'headline'])),
+          h('p', {"className": "big-p mt-25"}, entry.getIn(['data', 'copy'])),
+          h('div', {"className": "menu hero-menu align-center mt-25"},
+            h('a', {"className": "hero-menu-item"}, entry.getIn(['data', 'cta1'])),
+            h('a', {"className": "hero-menu-item button round"}, entry.getIn(['data', 'cta2']))
+          )
+        )
+      );
+      }
+    });
+
+    CMS.registerPreviewTemplate("hero", HeroPreview);
+  </script>
+
+  <script>
+    var WhyCardinal = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        return h('div', {"className": "why-cardinal why-cardinal-preview"},
+        h('div', {"className": "grid-container"},
+          h('div', {"className": "grid-x grid-margin-x why-cardinal-intro"},
+            h('div', {"className": "cell small-12 why-cardinal-headline"},
+              h('h2', {"className": "section-title"}, entry.getIn(['data', 'eyebrow'])),
+              h('h3', {"className": "weight-bold section-heading"}, entry.getIn(['data', 'headline']))
+            ),
+            h('div', {"className": "cell small-12 large-6"}, entry.getIn(['data', 'copy_left'])),
+            h('div', {"className": "cell small-12 large-6"}, entry.getIn(['data', 'copy_right']))
+          ),
+          h('div', {"className": "grid-x grid-margin-x small-up-2 medium-up-3 large-up-4 benefit-grid"},
+            this.props.widgetsFor('benefit').map(function(benefit, index) {
+              var icon = benefit.getIn(['widgets', 'icon']);
+              return h('div', {key: index, "className": "cell benefit-cell"},
+                h('i', {"className": icon}, icon),
+                h('h5', {"className": "benefit-title brdr-title"}, benefit.getIn(['widgets', 'title'])),
+                h('p', {"className": "benefit-description"}, benefit.getIn(['widgets', 'description']))
+              )
+            })
+          )
+        )
+      );
+      }
+    });
+    CMS.registerPreviewTemplate("why_cardinal", WhyCardinal);
+  </script>
+
+  <script>
+    var OurValues = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        return h('div', {"className": "our-values our-values-preview"},
+          h('div', {"className": "grid-container full"},
+            h('div', {"className": "grid-x our-values-grid-x align-center large-align-justify"},
+              h('div', {"className": "cell small-12 medium-10 large-5"},
+                h('div', {"className": "our-values-content"},
+                  h('div', {"className": "our-values-intro"},
+                    h('h2', {"className": "section-title"}, entry.getIn(['data', 'eyebrow'])),
+                    h('h3', {"className": "weight-bold mb-25 section-heading"}, entry.getIn(['data', 'headline'])),
+                    h('p', {"className": "big-p"}, entry.getIn(['data', 'copy']))
+                  ),
+                  this.props.widgetsFor('value').map(function(value, index) {
+                    return h('div', {key: index, "className": "media-object single-value"},
+                      h('div', {"className": "media-object-section"},
+                        h('i', {"className": "icon"}, "icon"),
+                      ),
+                      h('div', {"className": "media-object-section single-value-content"},
+                        h('h5', {"className": "value-title"}, value.getIn(['widgets', 'title'])),
+                        h('p', {}, value.getIn(['widgets', 'content']))
+                      )
+                    )
+                  })
+                )
+              )
+            )
+          )
+        )
+      }
+    });
+    CMS.registerPreviewTemplate("our_values", OurValues);
+  </script>
+
+</body>
+</html>

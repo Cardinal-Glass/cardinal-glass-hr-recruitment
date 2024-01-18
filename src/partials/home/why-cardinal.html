@@ -1,4 +1,4 @@
-<section id="why-cardinal" data-magellan-target="why-cardinal">
+<section id="why-cardinal" class="why-cardinal" data-magellan-target="why-cardinal">
   <div class="section-bg"></div>
   <div class="why-cardinal-bg-img">
     <img srcset="{{root}}assets/img/cardinal-break.png, {{root}}assets/img/cardinal-break-2x.png 2x"
@@ -7,19 +7,19 @@
   <div class="grid-container">
     <div class="grid-x grid-margin-x why-cardinal-intro">
       <div class="cell small-12 why-cardinal-headline">
-        <h2 class="section-title">Why Cardinal</h2>
-        <h3 class="weight-bold section-heading">Perks and benefits like you would not believe.</h3>
+        <h2 class="section-title">{{why-cardinal.eyebrow}}</h2>
+        <h3 class="weight-bold section-heading">{{why-cardinal.headline}}</h3>
       </div>
       <div class="cell small-12 large-6">
-        <p>At Cardinal, our mission is to be the Insulating Glass supplier of choice in the residential window and door market by enhancing our culture of excellence, partnering with our customers, developing leaders, while creating life lasting opportunities for our employees. We go beyond a benefit package and competitive wages by offering opportunities for growth both horizontally and vertically. </p>
+        <p>{{why-cardinal.copy_left}}</p>
       </div>
       <div class="cell small-12 large-6">
-        <p>That means as your technical and soft skills increase so does your paycheck, whether you take on additional responsibilities or not. If you’re looking to grow your opportunities, we offer leadership development programs and have a long history of internal promotions that have led to successful careers.</p>
+        <p>{{why-cardinal.copy_right}}</p>
       </div>
     </div>
     {{#if benefits}}
     <div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4 benefit-grid">
-      {{#each benefits.benefit}}
+      {{#each why-cardinal.benefit}}
       <div class="cell benefit-cell">
         <i class="{{ icon }} benefit-icon"></i>
         <h5 class="benefit-title brdr-title">{{ title }}</h5>
@@ -32,13 +32,13 @@
       <div class="grid-x grid-margin-x">
         <div class="cell small-12 large-5 small-order-2 large-order-1">
           <img src="{{root}}assets/img/vpp-logo.png" alt="oregon vpp logo" loading="lazy" width="130" height="99" style="margin-bottom:20px;">
-          <h3 class="weight-bold section-heading img-headline">Employee Safety</h3>
-          <p class="mt-25">The Safety of Employees is our number #1 priority. To prove it, Cardinal IG Hood River, has become Oregon OSHA’s 21st Voluntary Protective Programs (VPP) Star Certified workplace. The VPP Star certification recognizes employers who go beyond what is required by their industry safety standards. VPP certified jobsites have up to 80% fewer workday injuries than those of a similar workplace that is not certified, helping to assure our employees they have a safe place to work.</p>
-          <p class="weight-bold">Find Out More: <a href="https://www.osha.gov/vpp/all-about-vpp" target="_blank" rel="noopener" class="white-link text-lg">https://www.osha.gov/vpp/all-about-vpp</a></p>
+          <h3 class="weight-bold section-heading img-headline">{{why-cardinal.safety_headline}}</h3>
+          <p class="mt-25">{{why-cardinal.safety_copy}}</p>
+          <p class="weight-bold">{{{why-cardinal.safety_link}}}</p>
         </div>
         <div class="cell small-12 large-7 small-order-1 large-order-2 safety-slider-cell">
           <div class="safety-slider">
-            {{# each safety-slider.slides}}
+            {{# each why-cardinal.slides}}
             <div>
               <img class="safety-slider-img object-fit-cover" src="{{root}}assets/img/{{ img }}" alt="{{ alt }}" loading="lazy">
             </div>

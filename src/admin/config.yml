@@ -1,0 +1,63 @@
+backend:
+  name: test-repo
+  # branch: cms # Branch to update (optional; defaults to master)
+media_folder: "src/assets/img/uploads"
+public_folder: "/assets/img/uploads"
+logo_url: https://www.cardinalhoodriver.com/assets/img/cardinal.svg
+collections:
+  - label: "Page Sections"
+    name: "sections"
+    files:
+      - label: "Hero"
+        name: "hero"
+        file: "src/data/hero.json"
+        fields:
+          - {label: Headline, name: headline, widget: string}
+          - {label: Copy, name: copy, widget: text}
+          - {label: CTA 1, name: cta1, widget: string}
+          - {label: Link 1, name: link1, widget: string}
+          - {label: CTA 2, name: cta2, widget: string}
+          - {label: Link 2, name: link2, widget: string}
+      - label: "Why Cardinal"
+        name: "why_cardinal"
+        file: "src/data/why-cardinal.json"
+        fields:
+          - {label: Eyebrow, name: eyebrow, widget: string}
+          - {label: Headline, name: headline, widget: string}
+          - {label: "Copy Left", name: copy_left, widget: text}
+          - {label: "Copy Right", name: copy_right, widget: text}
+          - label: "Benefits"
+            name: benefit
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Benefit Icon", name: icon, widget: string}
+              - {label: "Benefit Headline", name: title, widget: string}
+              - {label: "Benefit Copy", name: description, widget: string}
+      - label: "Our Values"
+        name: "our_values"
+        file: "src/data/values.json"
+        fields:
+          - {label: Eyebrow, name: eyebrow, widget: string}
+          - {label: Headline, name: headline, widget: string}
+          - {label: "Copy", name: copy, widget: text}
+          - label: "Values"
+            name: value
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Value Icon", name: icon, widget: string}
+              - {label: "Value Headline", name: title, widget: string}
+              - {label: "Value Copy", name: content, widget: string}
+  - label: "Footer"
+    name: footer
+    files: 
+      - label: "Footer"
+        name: footer
+        file: "src/data/footer.json"
+        fields:
+          - {label: "Footer logo", name: logo, widget: image, multiple: false}
+          - {label: "Address", name: address, widget: text}
+          - {label: "Google Map Link", name: gmap, widget: string}
+          - {label: "Phone Number", name: phone, widget: string}
+          - {label: "Email Address", name: email, widget: string}
